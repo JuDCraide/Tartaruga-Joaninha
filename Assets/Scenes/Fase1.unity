@@ -2320,7 +2320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2054749402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2396,17 +2396,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 893944672797413116, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2673567619782344431, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5809660792597827444, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1207
+      objectReference: {fileID: 0}
     - target: {fileID: 6388797700379237411, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388797700379237411, guid: b54611395366234499d5d33b8a03c56b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6388797700379237411, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2447,6 +2451,10 @@ PrefabInstance:
     - target: {fileID: 6388797700379237411, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441755700198864258, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
