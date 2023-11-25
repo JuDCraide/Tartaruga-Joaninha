@@ -2189,7 +2189,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.35}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
@@ -2228,6 +2228,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1874149981271873448, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1891618987168297732, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2274,6 +2278,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2960628882309594315, guid: b54611395366234499d5d33b8a03c56b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842971301365909591, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842971301365909591, guid: b54611395366234499d5d33b8a03c56b, type: 3}
+      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
