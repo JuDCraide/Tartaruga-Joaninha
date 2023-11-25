@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour {
 
     private Rigidbody2D rb;
+    private Animator playerAnimator;
     
     bool turnedRight = true;
     [SerializeField]
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     private void OnEnable() {
@@ -42,6 +44,7 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {
         moveDirection = move.ReadValue<float>();
         FlipPlayer();
+        playerAnimator.SetBool("isWalking", moveDirection != 0);
     }
 
 
