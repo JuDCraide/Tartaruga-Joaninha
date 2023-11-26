@@ -24,13 +24,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "WaterMovement",
+                    "name": "WaterMovementHorizontal",
                     "type": "Value",
                     "id": "c2d0354a-5c46-4184-9267-ee27a0a099fc",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "WaterMovementVertical",
+                    "type": "Button",
+                    "id": "a619a0d8-ae10-46f6-9edb-4b30dccc86c4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -129,29 +138,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Negative",
                     "id": "e68c4518-47eb-45c9-8031-c20f81e68cc6",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "Positive",
                     "id": "6ac73166-d272-46e4-bc7a-7911b3536a0b",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -162,7 +171,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -173,7 +182,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -184,7 +193,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -195,7 +204,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -206,7 +215,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -217,7 +226,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -228,7 +237,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -239,7 +248,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -250,7 +259,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "WaterMovement",
+                    "action": "WaterMovementVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

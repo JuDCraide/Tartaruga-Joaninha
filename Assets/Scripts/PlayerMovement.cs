@@ -21,16 +21,23 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpDelay = 0.10f;
     public float jumpTime = 0.35f;
 
-
     [Header("Ground Detect")]
     public LayerMask groundLayer;
     [SerializeField] private Transform feetPosition;
     [SerializeField] float feetRadius;
     private bool grounded = true;
 
+    [Header("Water Movement")]
+    [SerializeField] float swimSpeed = 3.0f;
+    private bool onWater = true;
+    float swimDirectionHorizontal = 0;
+    float swimDirectionVertical = 0;
+
     private GameInputActions playerControls;
     private InputAction move;
     private InputAction jump;
+    private InputAction swimH;
+    private InputAction swimV;
 
     private void Awake() {
         playerControls = new GameInputActions();
@@ -48,12 +55,20 @@ public class PlayerMovement : MonoBehaviour {
         jump = playerControls.Player.Jump;
         jump.Enable();
         jump.performed += jumpPlayer;
+
+        swimH = playerControls.Player.WaterMovementHorizontal;
+        swimV= playerControls.Player.WaterMovementVertical;
+        swimH.Enable();
+        swimV.Enable();
     }
 
     private void OnDisable() {
         move.Disable();
         jump.Disable();
+        swimH.Enable();
+        swimV.Disable();
     }
+
     public bool isGrounded() {
         if (Physics2D.OverlapCircle(feetPosition.position, feetRadius, groundLayer)) {
             grounded = true;
@@ -81,40 +96,54 @@ public class PlayerMovement : MonoBehaviour {
             turnedRight = !turnedRight;
             GetComponent<SpriteRenderer>().flipX = !turnedRight;
         }
+        else if ((turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
+            turnedRight = !turnedRight;
+            GetComponent<SpriteRenderer>().flipX = !turnedRight;
+        }
     }
 
     void Update() {
-        moveDirection = move.ReadValue<float>();
         FlipPlayer();
-        playerAnimator.SetBool("isWalking", moveDirection != 0);
         isGrounded();
 
-        if (isJumping) {
-            if (jumpCounter > (jumpTime - jumpDelay)) {
-                playerAnimator.SetBool("isJumping", true);
-                jumpCounter -= Time.deltaTime;
-                jumpCounter2 += Time.deltaTime;
+        if (onWater) {
+            swimDirectionHorizontal = swimH.ReadValue<float>();
+            swimDirectionVertical  = swimV.ReadValue<float>();
+            playerAnimator.SetBool("isSwiming", true);
+        }
+        else {
+            moveDirection = move.ReadValue<float>();
+            playerAnimator.SetBool("isWalking", moveDirection != 0);
+
+            if (isJumping) {
+                if (jumpCounter > (jumpTime - jumpDelay)) {
+                    playerAnimator.SetBool("isJumping", true);
+                    jumpCounter -= Time.deltaTime;
+                    jumpCounter2 += Time.deltaTime;
+                }
+                else if (jumpCounter > 0) {
+                    playerAnimator.SetBool("isJumping", true);
+                    rb.velocity = Vector2.up * jumpForce;
+                    jumpCounter -= Time.deltaTime;
+                    jumpCounter2 += Time.deltaTime;
+                }
+                else {
+                    isJumping = false;
+                }
             }
-            else if (jumpCounter > 0) {
-                playerAnimator.SetBool("isJumping", true);
-                rb.velocity = Vector2.up * jumpForce;
-                jumpCounter -= Time.deltaTime;
-                jumpCounter2 += Time.deltaTime;
-            }
-            else {
+            if (jump.WasReleasedThisFrame()) {
                 isJumping = false;
             }
-        }
-        if (jump.WasReleasedThisFrame()) {
-            isJumping = false;
-        }
-        if (grounded && !isJumping) {
-            playerAnimator.SetBool("isJumping", false);
+            if (grounded && !isJumping) {
+                playerAnimator.SetBool("isJumping", false);
+            }
         }
     }
 
 
     void FixedUpdate() {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(swimDirectionHorizontal * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(swimDirectionVertical * moveSpeed, rb.velocity.x);
     }
 }
