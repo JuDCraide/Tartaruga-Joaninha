@@ -67,7 +67,6 @@ public class PlayerMovement : MonoBehaviour {
 
     void jumpPlayer(InputAction.CallbackContext context) {
         if (grounded && !isJumping) {
-            Debug.Log("start jump");
             playerAnimator.SetBool("isJumping", true);
             isJumping = true;
             //rb.velocity = Vector2.up * jumpForce;
@@ -91,16 +90,12 @@ public class PlayerMovement : MonoBehaviour {
         isGrounded();
 
         if (isJumping) {
-            Debug.Log(jumpCounter2);
-            Debug.Log(Time.deltaTime);
             if (jumpCounter > (jumpTime - jumpDelay)) {
-                Debug.Log("delay");
                 playerAnimator.SetBool("isJumping", true);
                 jumpCounter -= Time.deltaTime;
                 jumpCounter2 += Time.deltaTime;
             }
             else if (jumpCounter > 0) {
-                Debug.Log("jump");
                 playerAnimator.SetBool("isJumping", true);
                 rb.velocity = Vector2.up * jumpForce;
                 jumpCounter -= Time.deltaTime;
@@ -115,7 +110,6 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (grounded && !isJumping) {
             playerAnimator.SetBool("isJumping", false);
-            Debug.Log(jumpCounter2);
         }
     }
 
