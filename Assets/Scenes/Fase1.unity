@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 585901716}
   - component: {fileID: 585901718}
   - component: {fileID: 585901717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -865,6 +865,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &589540337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589540338}
+  m_Layer: 0
+  m_Name: FeetPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589540338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589540337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.109, y: -0.603, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1759402835}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1127491164
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127491166}
   - component: {fileID: 1127491165}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +956,7 @@ GameObject:
   - component: {fileID: 1739215213}
   - component: {fileID: 1739215212}
   - component: {fileID: 1739215211}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3120,7 +3151,7 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.35}
-  m_MaximumTileChangeCount: 1000
+  m_MaximumTileChangeCount: 100
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
 --- !u!50 &1739215213
@@ -3150,6 +3181,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &1759402835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6388797700379237411, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+  m_PrefabInstance: {fileID: 3938152995186443194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1840841833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,6 +3366,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: jumpTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: jumpDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: jumpForce
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: feetRadius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: feetPosition
+      value: 
+      objectReference: {fileID: 589540338}
+    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 6388797700379237411, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3374,8 +3434,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7498778936441323625, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809313933667385656, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6388797700379237411, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 589540338}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}

@@ -7,14 +7,30 @@ public class PlayerMovement : MonoBehaviour {
 
     private Rigidbody2D rb;
     private Animator playerAnimator;
-    
-    bool turnedRight = true;
-    [SerializeField]
-    float moveSpeed = 1.0f;
+
+    [Header("Ground Movement")]
+    [SerializeField] float moveSpeed = 1.0f;
     float moveDirection = 0;
+    [SerializeField] bool turnedRight = true;
+
+    [Header("Ground Jump")]
+    [SerializeField] float jumpForce = 10.0f;
+    bool isJumping = false;
+    private float jumpCounter;
+    private float jumpCounter2;
+    public float jumpDelay = 0.10f;
+    public float jumpTime = 0.35f;
+
+
+    [Header("Ground Detect")]
+    public LayerMask groundLayer;
+    [SerializeField] private Transform feetPosition;
+    [SerializeField] float feetRadius;
+    private bool grounded = true;
 
     private GameInputActions playerControls;
     private InputAction move;
+    private InputAction jump;
 
     private void Awake() {
         playerControls = new GameInputActions();
@@ -28,14 +44,41 @@ public class PlayerMovement : MonoBehaviour {
     private void OnEnable() {
         move = playerControls.Player.GroundMovement;
         move.Enable();
+
+        jump = playerControls.Player.Jump;
+        jump.Enable();
+        jump.performed += jumpPlayer;
     }
 
     private void OnDisable() {
         move.Disable();
+        jump.Disable();
+    }
+    public bool isGrounded() {
+        if (Physics2D.OverlapCircle(feetPosition.position, feetRadius, groundLayer)) {
+            grounded = true;
+        }
+        else {
+            grounded = false;
+        }
+
+        return grounded;
+    }
+
+    void jumpPlayer(InputAction.CallbackContext context) {
+        if (grounded && !isJumping) {
+            Debug.Log("start jump");
+            playerAnimator.SetBool("isJumping", true);
+            isJumping = true;
+            //rb.velocity = Vector2.up * jumpForce;
+            jumpCounter = jumpTime;
+            jumpCounter2 = 0;
+        }
+
     }
 
     void FlipPlayer() {
-        if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f)) {            
+        if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f)) {
             turnedRight = !turnedRight;
             GetComponent<SpriteRenderer>().flipX = !turnedRight;
         }
@@ -45,6 +88,35 @@ public class PlayerMovement : MonoBehaviour {
         moveDirection = move.ReadValue<float>();
         FlipPlayer();
         playerAnimator.SetBool("isWalking", moveDirection != 0);
+        isGrounded();
+
+        if (isJumping) {
+            Debug.Log(jumpCounter2);
+            Debug.Log(Time.deltaTime);
+            if (jumpCounter > (jumpTime - jumpDelay)) {
+                Debug.Log("delay");
+                playerAnimator.SetBool("isJumping", true);
+                jumpCounter -= Time.deltaTime;
+                jumpCounter2 += Time.deltaTime;
+            }
+            else if (jumpCounter > 0) {
+                Debug.Log("jump");
+                playerAnimator.SetBool("isJumping", true);
+                rb.velocity = Vector2.up * jumpForce;
+                jumpCounter -= Time.deltaTime;
+                jumpCounter2 += Time.deltaTime;
+            }
+            else {
+                isJumping = false;
+            }
+        }
+        if (jump.WasReleasedThisFrame()) {
+            isJumping = false;
+        }
+        if (grounded && !isJumping) {
+            playerAnimator.SetBool("isJumping", false);
+            Debug.Log(jumpCounter2);
+        }
     }
 
 
