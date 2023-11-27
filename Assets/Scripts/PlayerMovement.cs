@@ -28,8 +28,9 @@ public class PlayerMovement : MonoBehaviour {
     private bool grounded = true;
 
     [Header("Water Movement")]
+    public LayerMask riverWater;
     [SerializeField] float swimSpeed = 3.0f;
-    private bool onWater = true;
+    private bool onWater = false;
     float swimDirectionHorizontal = 0;
     float swimDirectionVertical = 0;
 
@@ -57,7 +58,7 @@ public class PlayerMovement : MonoBehaviour {
         jump.performed += jumpPlayer;
 
         swimH = playerControls.Player.WaterMovementHorizontal;
-        swimV= playerControls.Player.WaterMovementVertical;
+        swimV = playerControls.Player.WaterMovementVertical;
         swimH.Enable();
         swimV.Enable();
     }
@@ -67,6 +68,17 @@ public class PlayerMovement : MonoBehaviour {
         jump.Disable();
         swimH.Enable();
         swimV.Disable();
+    }
+
+    public bool isOnWater() {
+        if (Physics2D.OverlapCircle(feetPosition.position, feetRadius, riverWater)) {
+            onWater = true;
+        }
+        else {
+            onWater = false;
+        }
+
+        return onWater;
     }
 
     public bool isGrounded() {
@@ -84,7 +96,6 @@ public class PlayerMovement : MonoBehaviour {
         if (grounded && !isJumping) {
             playerAnimator.SetBool("isJumping", true);
             isJumping = true;
-            //rb.velocity = Vector2.up * jumpForce;
             jumpCounter = jumpTime;
             jumpCounter2 = 0;
         }
@@ -92,11 +103,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FlipPlayer() {
-        if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f)) {
-            turnedRight = !turnedRight;
-            GetComponent<SpriteRenderer>().flipX = !turnedRight;
-        }
-        else if ((turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
+        if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f) ||
+            (turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
+            Debug.Log(turnedRight);
             turnedRight = !turnedRight;
             GetComponent<SpriteRenderer>().flipX = !turnedRight;
         }
@@ -105,13 +114,15 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {
         FlipPlayer();
         isGrounded();
+        isOnWater();
 
         if (onWater) {
             swimDirectionHorizontal = swimH.ReadValue<float>();
-            swimDirectionVertical  = swimV.ReadValue<float>();
+            swimDirectionVertical = swimV.ReadValue<float>();
             playerAnimator.SetBool("isSwiming", true);
         }
         else {
+            playerAnimator.SetBool("isSwiming", false);
             moveDirection = move.ReadValue<float>();
             playerAnimator.SetBool("isWalking", moveDirection != 0);
 
@@ -142,8 +153,11 @@ public class PlayerMovement : MonoBehaviour {
 
 
     void FixedUpdate() {
-        rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        rb.velocity = new Vector2(swimDirectionHorizontal * moveSpeed, rb.velocity.y);
-        rb.velocity = new Vector2(swimDirectionVertical * moveSpeed, rb.velocity.x);
+        if (onWater) {
+            rb.velocity = new Vector2(swimDirectionHorizontal * swimSpeed, swimDirectionVertical * swimSpeed);
+        }
+        else {
+            rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+        }
     }
 }

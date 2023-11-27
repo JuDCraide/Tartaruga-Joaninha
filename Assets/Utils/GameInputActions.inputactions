@@ -133,39 +133,6 @@
                 },
                 {
                     "name": "Horizontal",
-                    "id": "d06952a1-0842-4bed-b542-af00003bbaf7",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WaterMovementHorizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "Negative",
-                    "id": "e68c4518-47eb-45c9-8031-c20f81e68cc6",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WaterMovementHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Positive",
-                    "id": "6ac73166-d272-46e4-bc7a-7911b3536a0b",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "WaterMovementHorizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Horizontal",
                     "id": "7703fe24-d16a-47f7-8cd9-77e8bf667780",
                     "path": "1DAxis",
                     "interactions": "",
@@ -198,6 +165,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Horizontal",
+                    "id": "d06952a1-0842-4bed-b542-af00003bbaf7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WaterMovementHorizontal",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "e68c4518-47eb-45c9-8031-c20f81e68cc6",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WaterMovementHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "6ac73166-d272-46e4-bc7a-7911b3536a0b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WaterMovementHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Vertical",
                     "id": "e63ae63b-48e0-40f9-a1c7-8c46eed0f997",
                     "path": "1DAxis",
@@ -211,7 +211,7 @@
                 {
                     "name": "negative",
                     "id": "36cfaeac-f50c-4291-bc42-7ccdf5e9a141",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -222,7 +222,7 @@
                 {
                     "name": "positive",
                     "id": "3994cc95-f0fb-4494-9fbe-0c643f9a9b98",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
