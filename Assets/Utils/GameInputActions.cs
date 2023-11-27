@@ -44,24 +44,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""WaterMovementHorizontal"",
-                    ""type"": ""Value"",
-                    ""id"": ""c2d0354a-5c46-4184-9267-ee27a0a099fc"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""WaterMovementVertical"",
-                    ""type"": ""Button"",
-                    ""id"": ""a619a0d8-ae10-46f6-9edb-4b30dccc86c4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,10 +134,56 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerWater"",
+            ""id"": ""f1682f7c-9a08-483e-aa94-272712c074ba"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""e524ee60-0f3c-4821-a48f-25bd32f20e83"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""WaterMovementHorizontal"",
+                    ""type"": ""Value"",
+                    ""id"": ""f3dac87f-68d7-4f60-ae32-bb1d31480742"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""WaterMovementVertical"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b7465c5-0228-4776-84b4-18420f678d7e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""d3672dc5-532c-4fe5-87e7-74a973ca9d1e"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""Horizontal"",
-                    ""id"": ""7703fe24-d16a-47f7-8cd9-77e8bf667780"",
+                    ""id"": ""a6c554a8-4ee0-4a8e-a09a-2e8f0429bc1b"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -166,7 +194,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""16566459-f6cc-476e-9059-143bed86fbae"",
+                    ""id"": ""b1b3522f-25dc-48ea-bef2-dd107a21088c"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -177,7 +205,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""a883ab42-a070-485c-b838-53e5ba096dcd"",
+                    ""id"": ""94e25375-a2bc-4268-8dcc-ee53afea1eef"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -188,7 +216,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Horizontal"",
-                    ""id"": ""d06952a1-0842-4bed-b542-af00003bbaf7"",
+                    ""id"": ""ca447035-025c-42b8-8ae3-262103e66d46"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -199,7 +227,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Negative"",
-                    ""id"": ""e68c4518-47eb-45c9-8031-c20f81e68cc6"",
+                    ""id"": ""4bd82964-b2f7-486c-a034-90e76b45b209"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -210,7 +238,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Positive"",
-                    ""id"": ""6ac73166-d272-46e4-bc7a-7911b3536a0b"",
+                    ""id"": ""483997d3-5014-4223-ba5b-8104ce4fafed"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -221,7 +249,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Vertical"",
-                    ""id"": ""e63ae63b-48e0-40f9-a1c7-8c46eed0f997"",
+                    ""id"": ""342eccfa-4d30-4a0a-8efb-0a140d862028"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -232,7 +260,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""36cfaeac-f50c-4291-bc42-7ccdf5e9a141"",
+                    ""id"": ""ca46c82e-6e9b-4171-be7f-00bda50e6e02"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -243,7 +271,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""3994cc95-f0fb-4494-9fbe-0c643f9a9b98"",
+                    ""id"": ""9d06c456-2298-4f9f-a3e3-30a416847fde"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -254,7 +282,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Vertical"",
-                    ""id"": ""f938420a-ae5b-49f5-9207-83a4d1c31cdb"",
+                    ""id"": ""1e77346b-1f29-420d-9448-afffcfab53a2"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -265,7 +293,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""1d6656ba-fdb9-4de3-bcb9-edfbea062e11"",
+                    ""id"": ""e8cf2763-bf46-4008-8fbb-d52df0ad491a"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -276,7 +304,7 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""2ccc8772-5962-4bbc-aac4-dc93a9b9f46c"",
+                    ""id"": ""574a8701-55fe-4f7b-8119-df88c733adc0"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -294,8 +322,11 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_GroundMovement = m_Player.FindAction("GroundMovement", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_WaterMovementHorizontal = m_Player.FindAction("WaterMovementHorizontal", throwIfNotFound: true);
-        m_Player_WaterMovementVertical = m_Player.FindAction("WaterMovementVertical", throwIfNotFound: true);
+        // PlayerWater
+        m_PlayerWater = asset.FindActionMap("PlayerWater", throwIfNotFound: true);
+        m_PlayerWater_Newaction = m_PlayerWater.FindAction("New action", throwIfNotFound: true);
+        m_PlayerWater_WaterMovementHorizontal = m_PlayerWater.FindAction("WaterMovementHorizontal", throwIfNotFound: true);
+        m_PlayerWater_WaterMovementVertical = m_PlayerWater.FindAction("WaterMovementVertical", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -359,16 +390,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_GroundMovement;
     private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_WaterMovementHorizontal;
-    private readonly InputAction m_Player_WaterMovementVertical;
     public struct PlayerActions
     {
         private @GameInputActions m_Wrapper;
         public PlayerActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @GroundMovement => m_Wrapper.m_Player_GroundMovement;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @WaterMovementHorizontal => m_Wrapper.m_Player_WaterMovementHorizontal;
-        public InputAction @WaterMovementVertical => m_Wrapper.m_Player_WaterMovementVertical;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -384,12 +411,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
-            @WaterMovementHorizontal.started += instance.OnWaterMovementHorizontal;
-            @WaterMovementHorizontal.performed += instance.OnWaterMovementHorizontal;
-            @WaterMovementHorizontal.canceled += instance.OnWaterMovementHorizontal;
-            @WaterMovementVertical.started += instance.OnWaterMovementVertical;
-            @WaterMovementVertical.performed += instance.OnWaterMovementVertical;
-            @WaterMovementVertical.canceled += instance.OnWaterMovementVertical;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -400,12 +421,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
-            @WaterMovementHorizontal.started -= instance.OnWaterMovementHorizontal;
-            @WaterMovementHorizontal.performed -= instance.OnWaterMovementHorizontal;
-            @WaterMovementHorizontal.canceled -= instance.OnWaterMovementHorizontal;
-            @WaterMovementVertical.started -= instance.OnWaterMovementVertical;
-            @WaterMovementVertical.performed -= instance.OnWaterMovementVertical;
-            @WaterMovementVertical.canceled -= instance.OnWaterMovementVertical;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -423,10 +438,76 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // PlayerWater
+    private readonly InputActionMap m_PlayerWater;
+    private List<IPlayerWaterActions> m_PlayerWaterActionsCallbackInterfaces = new List<IPlayerWaterActions>();
+    private readonly InputAction m_PlayerWater_Newaction;
+    private readonly InputAction m_PlayerWater_WaterMovementHorizontal;
+    private readonly InputAction m_PlayerWater_WaterMovementVertical;
+    public struct PlayerWaterActions
+    {
+        private @GameInputActions m_Wrapper;
+        public PlayerWaterActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_PlayerWater_Newaction;
+        public InputAction @WaterMovementHorizontal => m_Wrapper.m_PlayerWater_WaterMovementHorizontal;
+        public InputAction @WaterMovementVertical => m_Wrapper.m_PlayerWater_WaterMovementVertical;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerWater; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerWaterActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerWaterActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+            @WaterMovementHorizontal.started += instance.OnWaterMovementHorizontal;
+            @WaterMovementHorizontal.performed += instance.OnWaterMovementHorizontal;
+            @WaterMovementHorizontal.canceled += instance.OnWaterMovementHorizontal;
+            @WaterMovementVertical.started += instance.OnWaterMovementVertical;
+            @WaterMovementVertical.performed += instance.OnWaterMovementVertical;
+            @WaterMovementVertical.canceled += instance.OnWaterMovementVertical;
+        }
+
+        private void UnregisterCallbacks(IPlayerWaterActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+            @WaterMovementHorizontal.started -= instance.OnWaterMovementHorizontal;
+            @WaterMovementHorizontal.performed -= instance.OnWaterMovementHorizontal;
+            @WaterMovementHorizontal.canceled -= instance.OnWaterMovementHorizontal;
+            @WaterMovementVertical.started -= instance.OnWaterMovementVertical;
+            @WaterMovementVertical.performed -= instance.OnWaterMovementVertical;
+            @WaterMovementVertical.canceled -= instance.OnWaterMovementVertical;
+        }
+
+        public void RemoveCallbacks(IPlayerWaterActions instance)
+        {
+            if (m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerWaterActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerWaterActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerWaterActions @PlayerWater => new PlayerWaterActions(this);
     public interface IPlayerActions
     {
         void OnGroundMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+    }
+    public interface IPlayerWaterActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
         void OnWaterMovementHorizontal(InputAction.CallbackContext context);
         void OnWaterMovementVertical(InputAction.CallbackContext context);
     }

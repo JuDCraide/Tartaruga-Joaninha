@@ -203,6 +203,7 @@ Transform:
   m_Children:
   - {fileID: 893944672797413116}
   - {fileID: 8200403704238627240}
+  - {fileID: 4717342534153757667}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5914334563862219203
@@ -349,6 +350,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   swimSpeed: 3
+  swimPosition: {fileID: 4717342534153757667}
+  swimRadius: 0.2
 --- !u!114 &6650205078857924541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +455,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1357746, y: 0.48628342}
   m_EdgeRadius: 0
+--- !u!1 &3328040540840995674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4717342534153757667}
+  m_Layer: 0
+  m_Name: SwimPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4717342534153757667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328040540840995674}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.109, y: -0.301, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6388797700379237411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4068375666760132996
 GameObject:
   m_ObjectHideFlags: 0

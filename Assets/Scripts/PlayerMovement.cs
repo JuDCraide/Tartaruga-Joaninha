@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
     [Header("Ground Detect")]
     public LayerMask groundLayer;
     [SerializeField] private Transform feetPosition;
-    [SerializeField] float feetRadius;
+    [SerializeField] float feetRadius = 0.2f;
     private bool grounded = true;
 
     [Header("Water Movement")]
@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour {
     private bool onWater = false;
     float swimDirectionHorizontal = 0;
     float swimDirectionVertical = 0;
+    [SerializeField] private Transform swimPosition;
+    [SerializeField] float swimRadius = 0.2f;
 
     private GameInputActions playerControls;
     private InputAction move;
@@ -57,8 +59,8 @@ public class PlayerMovement : MonoBehaviour {
         jump.Enable();
         jump.performed += jumpPlayer;
 
-        swimH = playerControls.Player.WaterMovementHorizontal;
-        swimV = playerControls.Player.WaterMovementVertical;
+        swimH = playerControls.PlayerWater.WaterMovementHorizontal;
+        swimV = playerControls.PlayerWater.WaterMovementVertical;
         swimH.Enable();
         swimV.Enable();
     }
@@ -71,7 +73,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public bool isOnWater() {
-        if (Physics2D.OverlapCircle(feetPosition.position, feetRadius, riverWater)) {
+        if (Physics2D.OverlapCircle(swimPosition.position, swimRadius, riverWater)) {
             onWater = true;
         }
         else {
@@ -93,7 +95,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void jumpPlayer(InputAction.CallbackContext context) {
-        if (grounded && !isJumping) {
+        if (grounded && !isJumping && !onWater) {
             playerAnimator.SetBool("isJumping", true);
             isJumping = true;
             jumpCounter = jumpTime;
@@ -105,7 +107,6 @@ public class PlayerMovement : MonoBehaviour {
     void FlipPlayer() {
         if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f) ||
             (turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
-            Debug.Log(turnedRight);
             turnedRight = !turnedRight;
             GetComponent<SpriteRenderer>().flipX = !turnedRight;
         }
@@ -116,38 +117,42 @@ public class PlayerMovement : MonoBehaviour {
         isGrounded();
         isOnWater();
 
-        if (onWater) {
-            swimDirectionHorizontal = swimH.ReadValue<float>();
-            swimDirectionVertical = swimV.ReadValue<float>();
+        swimDirectionHorizontal = swimH.ReadValue<float>();
+        swimDirectionVertical = swimV.ReadValue<float>();
+        moveDirection = move.ReadValue<float>();
+        if (onWater && !grounded) {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            transform.rotation = Quaternion.identity;
             playerAnimator.SetBool("isSwiming", true);
+            playerAnimator.SetBool("isJumping", false);
         }
         else {
+            rb.constraints = RigidbodyConstraints2D.None;
             playerAnimator.SetBool("isSwiming", false);
-            moveDirection = move.ReadValue<float>();
             playerAnimator.SetBool("isWalking", moveDirection != 0);
+        }
 
-            if (isJumping) {
-                if (jumpCounter > (jumpTime - jumpDelay)) {
-                    playerAnimator.SetBool("isJumping", true);
-                    jumpCounter -= Time.deltaTime;
-                    jumpCounter2 += Time.deltaTime;
-                }
-                else if (jumpCounter > 0) {
-                    playerAnimator.SetBool("isJumping", true);
-                    rb.velocity = Vector2.up * jumpForce;
-                    jumpCounter -= Time.deltaTime;
-                    jumpCounter2 += Time.deltaTime;
-                }
-                else {
-                    isJumping = false;
-                }
+        if (isJumping) {
+            if (jumpCounter > (jumpTime - jumpDelay)) {
+                playerAnimator.SetBool("isJumping", true);
+                jumpCounter -= Time.deltaTime;
+                jumpCounter2 += Time.deltaTime;
             }
-            if (jump.WasReleasedThisFrame()) {
+            else if (jumpCounter > 0) {
+                playerAnimator.SetBool("isJumping", true);
+                rb.velocity = Vector2.up * jumpForce;
+                jumpCounter -= Time.deltaTime;
+                jumpCounter2 += Time.deltaTime;
+            }
+            else {
                 isJumping = false;
             }
-            if (grounded && !isJumping) {
-                playerAnimator.SetBool("isJumping", false);
-            }
+        }
+        if (jump.WasReleasedThisFrame()) {
+            isJumping = false;
+        }
+        if (grounded && !isJumping) {
+            playerAnimator.SetBool("isJumping", false);
         }
     }
 
