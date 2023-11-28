@@ -100,6 +100,8 @@ public class PlayerMovement : MonoBehaviour {
             isJumping = true;
             jumpCounter = jumpTime;
             jumpCounter2 = 0;
+            transform.rotation = Quaternion.identity;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
     }
