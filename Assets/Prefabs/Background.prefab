@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 8
 --- !u!1 &317044400610402390
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 1
 --- !u!1 &1614776605097939340
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 3
 --- !u!1 &1709564519742244634
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 0.5
 --- !u!1 &4069854619238597656
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 8
 --- !u!1 &4123629632507206312
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 6
 --- !u!1 &4775557846576974401
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 8
 --- !u!1 &5061320826468963783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 1
 --- !u!1 &6045970263007337905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 3
 --- !u!1 &6463917038384798893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 6
 --- !u!1 &8449038975747145343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,4 +1394,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de30b9acafe018345a37c87fe9ed5663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 6

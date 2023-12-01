@@ -147,6 +147,8 @@ public class PlayerMovement : MonoBehaviour {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpCounter -= Time.deltaTime;
                 jumpCounter2 += Time.deltaTime;
+                transform.rotation = Quaternion.identity;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
             else {
                 isJumping = false;
