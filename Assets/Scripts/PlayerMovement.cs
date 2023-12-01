@@ -139,6 +139,8 @@ public class PlayerMovement : MonoBehaviour {
                 playerAnimator.SetBool("isJumping", true);
                 jumpCounter -= Time.deltaTime;
                 jumpCounter2 += Time.deltaTime;
+                transform.rotation = Quaternion.identity;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
             else if (jumpCounter > 0) {
                 playerAnimator.SetBool("isJumping", true);
