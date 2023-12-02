@@ -49,6 +49,8 @@ public class PlayerMovement : MonoBehaviour {
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+
+        GameManager.instance.setPlayer(gameObject);
     }
 
     private void OnEnable() {
