@@ -627,6 +627,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2087172854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2673567619782344431, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+  m_PrefabInstance: {fileID: 3938152995186443194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2087172862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087172854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2628951c2823b3c459ef34b89fc3f53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  currentHealth: 0
 --- !u!1001 &2914104562237254285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +654,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 484070439824471402, guid: d9ace3e41b5db87459553464df61f5bd, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484070439824471402, guid: d9ace3e41b5db87459553464df61f5bd, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 797216087444244300, guid: d9ace3e41b5db87459553464df61f5bd, type: 3}
+      propertyPath: m_CallbackLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 797216087444244300, guid: d9ace3e41b5db87459553464df61f5bd, type: 3}
+      propertyPath: m_ContactCaptureLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 4273071080890470692, guid: d9ace3e41b5db87459553464df61f5bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.88
@@ -843,7 +878,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2673567619782344431, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2087172862}
   m_SourcePrefab: {fileID: 100100000, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
 --- !u!1001 &5158281769715968867
 PrefabInstance:

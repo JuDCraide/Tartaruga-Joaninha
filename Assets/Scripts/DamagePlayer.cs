@@ -15,7 +15,10 @@ public class DamagePlayer : MonoBehaviour {
 
     private void OnCollisionExit2D(Collision2D other) {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player")) {
-            Debug.Log("Player Colided");
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            if(playerHealth != null){
+                playerHealth.takeDamage();
+            }
         }
     }
 }
