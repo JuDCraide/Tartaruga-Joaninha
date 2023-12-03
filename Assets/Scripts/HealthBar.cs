@@ -10,14 +10,14 @@ public class HealthBar : MonoBehaviour {
     [SerializeField] private GameObject[] lives;
 
     void Start() {
-        
+
     }
 
     void Update() {
-        
-    }   
 
-    void setLifeImage(GameObject live, string name){
+    }
+
+    void setLifeImage(GameObject live, string name) {
         for (int i = 0; i < live.transform.childCount; i++) {
             live.transform.GetChild(i).gameObject.SetActive(false);
         }
@@ -25,17 +25,20 @@ public class HealthBar : MonoBehaviour {
         live.transform.Find(name).gameObject.SetActive(true);
     }
 
-    public void setHealthBar(int currentHealth){
+    public void setHealthBar(int currentHealth) {
         for (int i = 0; i < maxLifeContainers; i++) {
-            if(i >= unlockedLifeContainers){
+            if (i >= unlockedLifeContainers) {
                 setLifeImage(lives[i], "Broken");
-            } else if(currentHealth >= 3){
+            }
+            else if (currentHealth >= 3) {
                 setLifeImage(lives[i], "3");
                 currentHealth -= 3;
-            } else if(currentHealth > 0){
+            }
+            else if (currentHealth > 0) {
                 setLifeImage(lives[i], currentHealth.ToString());
                 currentHealth = 0;
-            } else {
+            }
+            else {
                 setLifeImage(lives[i], "Empty");
             }
         }

@@ -26,12 +26,13 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void takeDamage() {
-        if(invulnerable) return;
+        if (invulnerable) return;
         currentHealth -= 1;
         healthBar.setHealthBar(currentHealth);
-        if(currentHealth<=0) {
+        if (currentHealth <= 0) {
             spriteRenderer.color = new Color(1, 0, 0, 1);
-        } else {
+        }
+        else {
             StartCoroutine(invulnerability());
         }
     }
