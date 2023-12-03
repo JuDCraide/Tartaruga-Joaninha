@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-    public int startingHealth = 3;
+    private int maxHealth;
     private int currentHealth;
     private bool invulnerable = false;
 
@@ -12,9 +12,13 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField] private float countFlashes;
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private HealthBar healthBar;
+
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        currentHealth = startingHealth;
+        maxHealth = HealthBar.fullHealthContainer * HealthBar.unlockedLifeContainers;
+        currentHealth = maxHealth;
+        healthBar.setHealthBar(currentHealth);
     }
 
     void Start() {
@@ -24,6 +28,7 @@ public class PlayerHealth : MonoBehaviour {
     public void takeDamage() {
         if(invulnerable) return;
         currentHealth -= 1;
+        healthBar.setHealthBar(currentHealth);
         if(currentHealth<=0) {
             spriteRenderer.color = new Color(1, 0, 0, 1);
         } else {
