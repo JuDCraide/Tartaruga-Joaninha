@@ -3133,7 +3133,7 @@ GameObject:
   - component: {fileID: 484070439824471402}
   - component: {fileID: 797216087444244300}
   - component: {fileID: 9062429535751104274}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3587,10 +3587,10 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
@@ -5723,7 +5723,7 @@ GameObject:
   - component: {fileID: 4363284800840688595}
   m_Layer: 10
   m_Name: Grid
-  m_TagString: Respawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

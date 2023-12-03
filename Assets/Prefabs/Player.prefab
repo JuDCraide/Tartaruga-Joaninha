@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893944672797413116}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6978757432354175015}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7307469609138939106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8291471612233786353}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lower_back_left_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6021838864982503957}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lower_front_left_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,8 @@ GameObject:
   - component: {fileID: 7649211335698028976}
   - component: {fileID: 6650205078857924541}
   - component: {fileID: 8809313933667385656}
-  m_Layer: 0
+  - component: {fileID: 4892713394976747988}
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852eac9c14395d342ab6df7bf338910a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 4
   turnedRight: 1
   jumpForce: 5.5
   jumpDelay: 0.05
@@ -285,7 +286,7 @@ MonoBehaviour:
   riverWater:
     serializedVersion: 2
     m_Bits: 2048
-  swimSpeed: 4
+  swimSpeed: 5
   swimPosition: {fileID: 4717342534153757667}
   swimRadius: 0.2
 --- !u!50 &7498778936441323625
@@ -300,10 +301,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -386,7 +387,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0041890144, y: -0.24019882}
+  m_Offset: {x: 0.0041890144, y: -0.24428883}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.18774465, y: 0.49563628}
@@ -396,7 +397,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1628697, y: 0.30570048}
+  m_Size: {x: 1.1628697, y: 0.21572047}
   m_EdgeRadius: 0
 --- !u!114 &6650205078857924541
 MonoBehaviour:
@@ -455,6 +456,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4892713394976747988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673567619782344431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2628951c2823b3c459ef34b89fc3f53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  IFramesDuration: 3
+  countFlashes: 3
+  targetNumLayer: 0c000000
 --- !u!1 &3328040540840995674
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4717342534153757667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SwimPos
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -495,7 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6075928160728438952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lower_back_right_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5809660792597827444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: left_wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3127387008098816209}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9074688152426477432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bone_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5127305405622133180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fixed_border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4239199763825942532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lower_front_right_leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 635127846756702404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6498298248083720225}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8066440820178419288}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: right_wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5681528098809833759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bone_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4095995801203613762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8200403704238627240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FeetPos
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
