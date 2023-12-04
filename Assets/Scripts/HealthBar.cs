@@ -6,6 +6,7 @@ public class HealthBar : MonoBehaviour {
     public static int maxLifeContainers = 3;
     public static int unlockedLifeContainers = 1;
     public static int fullHealthContainer = 3;
+    private int lastKnownHealth;
 
     [SerializeField] private GameObject[] lives;
 
@@ -26,6 +27,7 @@ public class HealthBar : MonoBehaviour {
     }
 
     public void setHealthBar(int currentHealth) {
+        lastKnownHealth = currentHealth;
         for (int i = 0; i < maxLifeContainers; i++) {
             if (i >= unlockedLifeContainers) {
                 setLifeImage(lives[i], "Broken");
@@ -42,5 +44,34 @@ public class HealthBar : MonoBehaviour {
                 setLifeImage(lives[i], "Empty");
             }
         }
+    }
+
+    public void setHealthBar() {
+        int currentHealth = lastKnownHealth;
+        for (int i = 0; i < maxLifeContainers; i++) {
+            if (i >= unlockedLifeContainers) {
+                setLifeImage(lives[i], "Broken");
+            }
+            else if (currentHealth >= 3) {
+                setLifeImage(lives[i], "3");
+                currentHealth -= 3;
+            }
+            else if (currentHealth > 0) {
+                setLifeImage(lives[i], currentHealth.ToString());
+                currentHealth = 0;
+            }
+            else {
+                setLifeImage(lives[i], "Empty");
+            }
+        }
+    }
+
+    public bool hasUnlockedAllCointainer() {
+        return unlockedLifeContainers >= maxLifeContainers;
+    }
+
+    public void unlockContainer() {
+        unlockedLifeContainers++;
+        setHealthBar();
     }
 }

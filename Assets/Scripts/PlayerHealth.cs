@@ -48,4 +48,14 @@ public class PlayerHealth : MonoBehaviour {
         spriteRenderer.color = new Color(1, 1, 1, 1);
         invulnerable = false;
     }
+
+    public bool hasFullHealth() {
+        maxHealth = HealthBar.fullHealthContainer * HealthBar.unlockedLifeContainers;
+        return currentHealth >= maxHealth;
+    }
+
+    public void addHealth() {
+        currentHealth++;
+        healthBar.setHealthBar(currentHealth);
+    }
 }
