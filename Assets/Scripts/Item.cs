@@ -39,7 +39,6 @@ public class Item : MonoBehaviour {
                 }
             }
             else if (type == ItemTypes.points) {
-                Debug.Log("ADD P");
                 gm.addPoint();
                 Destroy(gameObject);
             }

@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour {
     }
 
     public void addPoint() {
-        Debug.Log("POINTS");
         points += 5;
         pointsText.text = points.ToString("D7");
     }
