@@ -36,6 +36,12 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private Transform swimPosition;
     [SerializeField] float swimRadius = 0.2f;
 
+
+    [Header("Hat")]
+    private Vector2 hatInitialPosition;
+    private Quaternion hatInitialRotation;
+    [SerializeField] private GameObject hatObject;
+
     private GameInputActions playerControls;
     private InputAction move;
     private InputAction jump;
@@ -51,6 +57,9 @@ public class PlayerMovement : MonoBehaviour {
         playerAnimator = GetComponent<Animator>();
 
         GameManager.instance.setPlayer(gameObject);
+
+        hatInitialPosition = hatObject.transform.localPosition;
+        hatInitialRotation = hatObject.transform.rotation;
     }
 
     private void OnEnable() {
@@ -113,7 +122,20 @@ public class PlayerMovement : MonoBehaviour {
             (turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
             turnedRight = !turnedRight;
             GetComponent<SpriteRenderer>().flipX = !turnedRight;
+            FlipPlayerHat();
         }
+    }
+
+    void FlipPlayerHat() {
+        Vector2 hatPos = hatInitialPosition;
+        Quaternion hatRot = hatInitialRotation;
+        if(!turnedRight) {
+            hatPos = new Vector2(-hatInitialPosition.x, hatInitialPosition.y);
+            hatRot = Quaternion.Euler(hatRot.x, hatRot.y, hatRot.z);
+        }
+        hatObject.GetComponent<SpriteRenderer>().flipX = !turnedRight;
+        hatObject.transform.localPosition = hatPos;
+        hatObject.transform.rotation = hatRot;
     }
 
     void Update() {
