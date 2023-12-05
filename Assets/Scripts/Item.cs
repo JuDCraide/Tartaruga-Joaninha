@@ -6,14 +6,13 @@ using UnityEngine;
 enum ItemTypes {
     health,
     life,
-    points
+    money
 }
 
 public class Item : MonoBehaviour {
 
     [SerializeField] private ItemTypes type;
     [SerializeField] private HealthBar healthBar;
-    [SerializeField] private GameManager gm;
 
     void Start() {
 
@@ -38,8 +37,8 @@ public class Item : MonoBehaviour {
                     Destroy(gameObject);
                 }
             }
-            else if (type == ItemTypes.points) {
-                gm.addPoint();
+            else if (type == ItemTypes.money) {
+                GameManager.instance.addMoney(5);
                 Destroy(gameObject);
             }
         }
