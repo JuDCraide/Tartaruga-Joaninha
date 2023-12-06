@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 5de1c22a6a928c744889216b2d6c2ae2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6944480787001983572
+    second: goma_0
+  - first:
+      213: 427630186574483824
+    second: goma_1
+  - first:
+      213: -4260905329521702544
+    second: goma_2
+  - first:
+      213: 490512856161165288
+    second: goma_3
+  - first:
+      213: -4928535732822418783
+    second: goma_4
+  - first:
+      213: 5041647361449017887
+    second: goma_5
+  - first:
+      213: -1744968222334154495
+    second: goma_6
+  - first:
+      213: 5312931355909408521
+    second: goma_7
+  - first:
+      213: 8160242229274180344
+    second: goma_8
+  - first:
+      213: 1023846112724709994
+    second: goma_9
+  - first:
+      213: 3154093898567601840
+    second: goma_10
+  - first:
+      213: -1028887707212658952
+    second: goma_11
+  - first:
+      213: -1005067530499315159
+    second: goma_12
+  - first:
+      213: -825549806285532397
+    second: goma_13
+  - first:
+      213: -930500493187222471
+    second: goma_14
+  - first:
+      213: 8244381145464555008
+    second: goma_15
+  - first:
+      213: -8615158309516971265
+    second: goma_16
+  - first:
+      213: 6161668256113902123
+    second: goma_17
+  - first:
+      213: 6913324335856864209
+    second: goma_18
+  - first:
+      213: 3767595811967355024
+    second: goma_19
+  - first:
+      213: -2397065126619373056
+    second: goma_20
+  - first:
+      213: -2314920307367774979
+    second: goma_21
+  - first:
+      213: -9163846184729057568
+    second: goma_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: goma_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 269
+        width: 986
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45247ca7b70cf5060800000000000000
+      internalID: 6944480787001983572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 769
+        width: 82
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0719106936f3fe500800000000000000
+      internalID: 427630186574483824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_2
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 769
+        width: 83
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0794a449d293ed4c0800000000000000
+      internalID: -4260905329521702544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_3
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 765
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef9f3508d6aec600800000000000000
+      internalID: 490512856161165288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_4
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 281
+        width: 498
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aadc4e0dd25a9bb0800000000000000
+      internalID: -4928535732822418783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_5
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 757
+        width: 54
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1244fd309787f540800000000000000
+      internalID: 5041647361449017887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_6
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 757
+        width: 53
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1098d63a5a0a8c7e0800000000000000
+      internalID: -1744968222334154495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_7
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 281
+        width: 466
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907c3094be25bb940800000000000000
+      internalID: 5312931355909408521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 513
+        width: 6
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa770d92110f3170800000000000000
+      internalID: 8160242229274180344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 581
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62fe9d6d9e653e00800000000000000
+      internalID: 1023846112724709994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_10
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 390
+        width: 10
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be495c80b795cb20800000000000000
+      internalID: 3154093898567601840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 493
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6c2d1e418a8b1f0800000000000000
+      internalID: -1028887707212658952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_12
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 516
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a2f45f7684d02f0800000000000000
+      internalID: -1005067530499315159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_13
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 460
+        width: 6
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31355fb33de0b84f0800000000000000
+      internalID: -825549806285532397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_14
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 439
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934ff304bb23613f0800000000000000
+      internalID: -930500493187222471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_15
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 335
+        width: 6
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006c750a8fce96270800000000000000
+      internalID: 8244381145464555008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_16
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 269
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff27c7d992fc07880800000000000000
+      internalID: -8615158309516971265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_17
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 277
+        width: 52
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22487d02a4a28550800000000000000
+      internalID: 6161668256113902123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_18
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 273
+        width: 53
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbcfc7eadf01ff50800000000000000
+      internalID: 6913324335856864209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_19
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 277
+        width: 53
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098409ded60394430800000000000000
+      internalID: 3767595811967355024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_20
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 273
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0022060b7f9ebbed0800000000000000
+      internalID: -2397065126619373056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_21
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 265
+        width: 77
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df47104de30cfdfd0800000000000000
+      internalID: -2314920307367774979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goma_22
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 265
+        width: 77
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6e7e6727a73d080800000000000000
+      internalID: -9163846184729057568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      goma_0: 6944480787001983572
+      goma_1: 427630186574483824
+      goma_10: 3154093898567601840
+      goma_11: -1028887707212658952
+      goma_12: -1005067530499315159
+      goma_13: -825549806285532397
+      goma_14: -930500493187222471
+      goma_15: 8244381145464555008
+      goma_16: -8615158309516971265
+      goma_17: 6161668256113902123
+      goma_18: 6913324335856864209
+      goma_19: 3767595811967355024
+      goma_2: -4260905329521702544
+      goma_20: -2397065126619373056
+      goma_21: -2314920307367774979
+      goma_22: -9163846184729057568
+      goma_3: 490512856161165288
+      goma_4: -4928535732822418783
+      goma_5: 5041647361449017887
+      goma_6: -1744968222334154495
+      goma_7: 5312931355909408521
+      goma_8: 8160242229274180344
+      goma_9: 1023846112724709994
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
