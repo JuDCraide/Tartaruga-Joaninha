@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         playerControls = new GameInputActions();
+        SetHatSprite();
     }
 
     void Start() {
@@ -134,13 +135,23 @@ public class PlayerMovement : MonoBehaviour {
     void FlipPlayerHat() {
         Vector3 hatPos = hatInitialPosition;
         Quaternion hatRot = hatInitialRotation;
-        if(!turnedRight) {
+        if (!turnedRight) {
             hatPos = new Vector3(-hatInitialPosition.x, hatInitialPosition.y, hatInitialPosition.z);
             hatRot = Quaternion.Euler(hatRot.x, hatRot.y, hatRot.z);
         }
         hatObject.GetComponent<SpriteRenderer>().flipX = !turnedRight;
         hatObject.transform.localPosition = hatPos;
         hatObject.transform.rotation = hatRot;
+    }
+
+    public void SetHatSprite() {
+        if (Hats.selectedHat == null) {
+            hatObject.SetActive(false);
+        }
+        else {
+            hatObject.GetComponent<SpriteRenderer>().sprite = Hats.selectedHat.sprite; 
+            hatObject.SetActive(true);
+        }
     }
 
     void Update() {

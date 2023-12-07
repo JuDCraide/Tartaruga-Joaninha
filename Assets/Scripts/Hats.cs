@@ -5,31 +5,19 @@ using UnityEngine;
 
 [Serializable]
 public static class Hats {
-    [SerializeField] public static List<Hat> hats; //= new List<Hat> { null, null, null, null, null, null, null, null, null, null };
-    [SerializeField] public static Hat selectedHat = null;
+    [SerializeField] public static List<Hat> hats = new List<Hat> { null, null, null, null, null, null, null, null, null, null };
+    [SerializeField] public static Hat selectedHat { get; private set; } = null;
 
-    static Hats() {
-        Debug.Log("construtor");
-        Hat hat = new();
-        Hats.hats = new List<Hat> { null, null, null, null, null, null, null, null, null, null };
-    }
+    // static Hats() {
+    //     Hat hat = new();
+    //     Hats.hats = new List<Hat> { null, null, null, null, null, null, null, null, null, null };
+    // }
 
     public static Hat GetHat(int id) {
-        if (Hats.hats[id] == null) {
-            Debug.Log("null");
-        }
-        else {
-            Debug.Log(Hats.hats[id].ToString());
-        }
         return Hats.hats[id];
     }
 
     public static void SetHat(int id, Hat h) {
-        //foreach (Hat hat in hats) {
-        //    if (hat) {
-        //        Debug.Log(hat);
-        //    }
-        //}
         Hats.hats[id] = h;
     }
 

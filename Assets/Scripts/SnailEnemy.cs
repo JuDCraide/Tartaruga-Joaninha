@@ -28,7 +28,6 @@ public class SnailEnemy : MonoBehaviour {
     void Flip() {
         bool leftCollided = Physics2D.OverlapCircle(leftPosition.position, wallDetecdRadius, wallLayer);
         bool rightCollided = Physics2D.OverlapCircle(rightPosition.position, wallDetecdRadius, wallLayer);
-        Debug.Log(turnedRight.ToString() + " " +  leftCollided.ToString() + " " + rightCollided.ToString());
 
         if ( (turnedRight && rightCollided) || (!turnedRight && leftCollided)) {
             moveDirection *= -1;
