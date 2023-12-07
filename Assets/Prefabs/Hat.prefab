@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 5715498537128197821}
   - component: {fileID: 3420861787542767175}
   - component: {fileID: 1990079201826407461}
-  - component: {fileID: 2188820858304577164}
+  - component: {fileID: 3262178436580665296}
   m_Layer: 5
   m_Name: Hat
   m_TagString: Untagged
@@ -238,7 +238,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5989524651273359331}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2188820858304577164}
-        m_TargetAssemblyTypeName: Hat, Assembly-CSharp
+      - m_Target: {fileID: 3262178436580665296}
+        m_TargetAssemblyTypeName: HatSelect, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -346,7 +346,7 @@ MonoBehaviour:
           m_StringArgument: Level1
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2188820858304577164
+--- !u!114 &3262178436580665296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,11 +355,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5989524651273359331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c710f79d653f5fb47bcbd42988c35781, type: 3}
+  m_Script: {fileID: 11500000, guid: 76f16bfd4d1439044adeb15f3bfb040b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  sprite: {fileID: 21300000, guid: 79264f57d0079394b81c0a96ed4353aa, type: 3}
-  price: 10
+  hat:
+    id: 0
+    sprite: {fileID: 21300000, guid: 1d9efcd1339430d44bc94c7173a479d8, type: 3}
+    price: 10
+    bought: 0
+    selected: 0
   hatText: {fileID: 549985164985389040}
   hatImage: {fileID: 6415908317309443659}
