@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
-    private int money;
 
     public GameObject playerRef { get; private set; }
     public TMPro.TextMeshProUGUI moneyText;
@@ -36,7 +35,12 @@ public class GameManager : MonoBehaviour {
     }
 
     public void addMoney(int value) {
-        money += value;
+        Money.addMoney(value);
+        int money = Money.getMoney();
         moneyText.text = money.ToString("D7");
+    }
+
+    public void unselectHat() {
+        Hats.unselectHat();
     }
 }

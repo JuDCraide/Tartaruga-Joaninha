@@ -23,8 +23,6 @@ public class PlayerHealth : MonoBehaviour {
         currentHealth = maxHealth;
         healthBar.setHealthBar(currentHealth);
         invulnerable = false;
-
-
     }
 
 
