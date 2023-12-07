@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
     private float jumpCounter2;
     public float jumpDelay = 0.10f;
     public float jumpTime = 0.35f;
+    public Sound jumpSound;
 
     [Header("Ground Detect")]
     public LayerMask groundLayer;
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
     float swimDirectionVertical = 0;
     [SerializeField] private Transform swimPosition;
     [SerializeField] float swimRadius = 0.2f;
-
+    public Sound swimSound;
 
     [Header("Hat")]
     private Vector2 hatInitialPosition;
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         playerControls = new GameInputActions();
+        swimSound.InitializeSound();
+        jumpSound.InitializeSound();
     }
 
     void Start() {
@@ -85,6 +88,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool isOnWater() {
         if (Physics2D.OverlapCircle(swimPosition.position, swimRadius, riverWater)) {
+            if (onWater == false) {
+                Debug.Log("Enter Water");
+                AudioManager.instance.Play(swimSound);
+            }
             onWater = true;
         }
         else {

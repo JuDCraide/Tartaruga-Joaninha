@@ -14,6 +14,8 @@ public class Item : MonoBehaviour {
     [SerializeField] private ItemTypes type;
     [SerializeField] private HealthBar healthBar;
 
+    [SerializeField] private Sound itemCollected;
+
     void Start() {
 
     }

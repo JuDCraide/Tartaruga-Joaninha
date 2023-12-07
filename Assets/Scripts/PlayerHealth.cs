@@ -14,16 +14,17 @@ public class PlayerHealth : MonoBehaviour {
 
     [SerializeField] private HealthBar healthBar;
 
+    [SerializeField] private Sound playerHurt;
+    [SerializeField] private Sound playerDie;
+
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         maxHealth = HealthBar.fullHealthContainer * HealthBar.unlockedLifeContainers;
         currentHealth = maxHealth;
         healthBar.setHealthBar(currentHealth);
-    }
-
-    void Start() {
         invulnerable = false;
     }
+
 
     public void takeDamage() {
         if (invulnerable) return;
