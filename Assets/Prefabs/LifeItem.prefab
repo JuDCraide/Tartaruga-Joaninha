@@ -103,7 +103,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   healthBar: {fileID: 0}
-  gm: {fileID: 0}
+  itemCollectedSound:
+    clip: {fileID: 8300000, guid: 7478151cf36724a7dada558f746c3633, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    mute: 0
 --- !u!61 &2735778621526100057
 BoxCollider2D:
   m_ObjectHideFlags: 0

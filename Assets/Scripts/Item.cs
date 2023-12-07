@@ -14,7 +14,7 @@ public class Item : MonoBehaviour {
     [SerializeField] private ItemTypes type;
     [SerializeField] private HealthBar healthBar;
 
-    [SerializeField] private Sound itemCollected;
+    [SerializeField] private Sound itemCollectedSound;
 
     void Start() {
 
@@ -30,19 +30,23 @@ public class Item : MonoBehaviour {
                 PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
                 if (playerHealth != null && !playerHealth.hasFullHealth()) {
                     playerHealth.addHealth();
+                    AudioManager.instance.Play(itemCollectedSound);
                     Destroy(gameObject);
                 }
             }
             else if (type == ItemTypes.life) {
                 if (!healthBar.hasUnlockedAllCointainer()) {
                     healthBar.unlockContainer();
+                    AudioManager.instance.Play(itemCollectedSound);
                     Destroy(gameObject);
                 }
             }
             else if (type == ItemTypes.money) {
                 GameManager.instance.addMoney(5);
+                AudioManager.instance.Play(itemCollectedSound);
                 Destroy(gameObject);
             }
+
         }
     }
 }

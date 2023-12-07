@@ -485,11 +485,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3682782828982791589, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 652
       objectReference: {fileID: 0}
     - target: {fileID: 3682782828982791589, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 373
       objectReference: {fileID: 0}
     - target: {fileID: 3682782828982791589, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
       propertyPath: m_LocalPosition.z
@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220334000535383024, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
       propertyPath: bgMusic.mute
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -584,10 +584,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8376908065226877832, guid: 973b0da93e6dc0949a1070bfc41157af, type: 3}
-      propertyPath: gm
-      value: 
-      objectReference: {fileID: 441667100}
     - target: {fileID: 8376908065226877832, guid: 973b0da93e6dc0949a1070bfc41157af, type: 3}
       propertyPath: healthBar
       value: 
@@ -993,10 +989,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8879907795919818310, guid: 65fa9b4413f08674ca53b65adb7beec2, type: 3}
-      propertyPath: gm
-      value: 
-      objectReference: {fileID: 441667100}
-    - target: {fileID: 8879907795919818310, guid: 65fa9b4413f08674ca53b65adb7beec2, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 622676829}
@@ -1073,22 +1065,6 @@ PrefabInstance:
     - target: {fileID: 2673567619782344431, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
-      propertyPath: swimSound.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
-      propertyPath: swimSound.loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
-      propertyPath: swimSound.pitch
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814341985557194512, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
-      propertyPath: swimSound.volume
-      value: 0.494
       objectReference: {fileID: 0}
     - target: {fileID: 4892713394976747988, guid: f693946d7d0a72441b2244dd1a81f1ba, type: 3}
       propertyPath: healthBar
@@ -1342,10 +1318,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8376908065226877832, guid: 973b0da93e6dc0949a1070bfc41157af, type: 3}
-      propertyPath: gm
-      value: 
-      objectReference: {fileID: 441667100}
-    - target: {fileID: 8376908065226877832, guid: 973b0da93e6dc0949a1070bfc41157af, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 622676829}
@@ -1366,10 +1338,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1624286125}
     m_Modifications:
-    - target: {fileID: 2425853443835506161, guid: 010c0c8e971bd784dad4846e18c58e10, type: 3}
-      propertyPath: gm
-      value: 
-      objectReference: {fileID: 441667100}
     - target: {fileID: 2425853443835506161, guid: 010c0c8e971bd784dad4846e18c58e10, type: 3}
       propertyPath: healthBar
       value: 

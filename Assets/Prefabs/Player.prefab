@@ -279,6 +279,13 @@ MonoBehaviour:
   jumpForce: 5.5
   jumpDelay: 0.05
   jumpTime: 0.25
+  jumpSound:
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    loop: 0
+    volume: 0.4
+    pitch: 0.6
+    source: {fileID: 0}
+    mute: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -290,6 +297,13 @@ MonoBehaviour:
   swimSpeed: 5
   swimPosition: {fileID: 4717342534153757667}
   swimRadius: 0.2
+  swimSound:
+    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 0.5
+    source: {fileID: 0}
+    mute: 0
   hatObject: {fileID: 8589290424275123781}
 --- !u!50 &7498778936441323625
 Rigidbody2D:
@@ -473,6 +487,20 @@ MonoBehaviour:
   IFramesDuration: 3
   countFlashes: 3
   healthBar: {fileID: 0}
+  playerHurt:
+    clip: {fileID: 8300000, guid: 5fdb13d3756c84fecac96f5a2d124370, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 0.8
+    source: {fileID: 0}
+    mute: 0
+  playerDie:
+    clip: {fileID: 8300000, guid: df729d213c4be44a9b55cd109f5cd4f9, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    mute: 0
 --- !u!1 &3328040540840995674
 GameObject:
   m_ObjectHideFlags: 0

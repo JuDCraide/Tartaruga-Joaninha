@@ -103,6 +103,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   healthBar: {fileID: 0}
+  itemCollectedSound:
+    clip: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    mute: 0
 --- !u!50 &5070630982620270409
 Rigidbody2D:
   serializedVersion: 4

@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
     public Sound swimSound;
 
     [Header("Hat")]
-    private Vector2 hatInitialPosition;
+    private Vector3 hatInitialPosition;
     private Quaternion hatInitialRotation;
     [SerializeField] private GameObject hatObject;
 
@@ -51,8 +51,6 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         playerControls = new GameInputActions();
-        swimSound.InitializeSound();
-        jumpSound.InitializeSound();
     }
 
     void Start() {
@@ -89,7 +87,6 @@ public class PlayerMovement : MonoBehaviour {
     public bool isOnWater() {
         if (Physics2D.OverlapCircle(swimPosition.position, swimRadius, riverWater)) {
             if (onWater == false) {
-                Debug.Log("Enter Water");
                 AudioManager.instance.Play(swimSound);
             }
             onWater = true;
@@ -114,6 +111,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void jumpPlayer(InputAction.CallbackContext context) {
         if (grounded && !isJumping && !onWater) {
+            AudioManager.instance.Play(jumpSound);
             playerAnimator.SetBool("isJumping", true);
             isJumping = true;
             jumpCounter = jumpTime;
@@ -134,10 +132,10 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FlipPlayerHat() {
-        Vector2 hatPos = hatInitialPosition;
+        Vector3 hatPos = hatInitialPosition;
         Quaternion hatRot = hatInitialRotation;
         if(!turnedRight) {
-            hatPos = new Vector2(-hatInitialPosition.x, hatInitialPosition.y);
+            hatPos = new Vector3(-hatInitialPosition.x, hatInitialPosition.y, hatInitialPosition.z);
             hatRot = Quaternion.Euler(hatRot.x, hatRot.y, hatRot.z);
         }
         hatObject.GetComponent<SpriteRenderer>().flipX = !turnedRight;

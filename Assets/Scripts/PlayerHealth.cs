@@ -23,6 +23,8 @@ public class PlayerHealth : MonoBehaviour {
         currentHealth = maxHealth;
         healthBar.setHealthBar(currentHealth);
         invulnerable = false;
+
+
     }
 
 
@@ -32,8 +34,10 @@ public class PlayerHealth : MonoBehaviour {
         healthBar.setHealthBar(currentHealth);
         if (currentHealth <= 0) {
             spriteRenderer.color = new Color(1, 0, 0, 1);
+            AudioManager.instance.Play(playerDie);
         }
         else {
+            AudioManager.instance.Play(playerHurt);
             StartCoroutine(invulnerability());
         }
     }

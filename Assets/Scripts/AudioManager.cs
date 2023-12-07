@@ -27,8 +27,9 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void Play(Sound s) {
-        if (s.WasInitialized()) {
-            s.source.Play();
+        if (!s.WasInitialized()) {
+            s.InitializeSound();
         }
+        s.source.Play();
     }
 }
