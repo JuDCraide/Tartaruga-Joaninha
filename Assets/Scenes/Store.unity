@@ -589,6 +589,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2f12488ab614a2d429ed8450eeae533d, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (5)
@@ -978,6 +986,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8919fb6fdc56537469445fd6e15bc7cf, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (4)
@@ -1266,6 +1282,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd0e99dd8f61b294bb89fdbe1ce492bd, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (3)
@@ -1438,6 +1462,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 948e7658d76dc3d46b7e5f57e99721a2, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (6)
@@ -1548,6 +1580,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c370d3f7e6462549af62dcef01cf86e, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (1)
@@ -1930,6 +1970,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b767d7d799f418844bf9365c14967141, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (2)
@@ -2115,6 +2163,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1a8646fab57dc21428dd8814d3bc2de6, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (7)
@@ -2363,6 +2419,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3105ecce0ff9acc4ca416fd2d8175900, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (9)
@@ -2473,6 +2537,14 @@ PrefabInstance:
       propertyPath: hat.id
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.price
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b9603f9f084cafc4fb0de3fcf2217ff0, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat (8)
@@ -2575,6 +2647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 10279206}
     m_Modifications:
+    - target: {fileID: 3262178436580665296, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
+      propertyPath: hat.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ef9909c8d130c64389cc9c0eb91f220, type: 3}
     - target: {fileID: 5989524651273359331, guid: 1c7bb45f68e9bbf478181ed7ecf1a193, type: 3}
       propertyPath: m_Name
       value: Hat
