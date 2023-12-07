@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour {
@@ -10,19 +11,36 @@ public class LevelSelector : MonoBehaviour {
     [SerializeField] private bool historyLevel = false;
 
     public TMPro.TextMeshProUGUI levelName;
-    
+
     void Awake() {
-        if(level > unlockedLevel) {
+        if (level > unlockedLevel) {
             gameObject.GetComponent<Button>().interactable = false;
         }
         if (!historyLevel) {
-            levelName.text = "Nível \n"+ level.ToString();
+            levelName.text = "Nível \n" + level.ToString();
         }
-       
+
     }
 
-    // Update is called once per frame
-    void Update() {
+    public void LoadLevel(string sceneName) {
+        GameManager.currentLevel = level;
+        SceneManager.LoadScene(sceneName);
+    }
 
+    public static void UnlockNextLevel(int currentLevel) {
+        if (currentLevel == unlockedLevel) {
+            unlockedLevel++;
+        }
+        else if (currentLevel > unlockedLevel) {
+            unlockedLevel = currentLevel;
+        }
+    }
+    public static void ReturnToSelectLevel() {
+        SceneManager.LoadScene("SelectLevel");
+    }
+
+    public static void EndLevel(int currentLevel) {
+        UnlockNextLevel(currentLevel);
+        ReturnToSelectLevel();
     }
 }

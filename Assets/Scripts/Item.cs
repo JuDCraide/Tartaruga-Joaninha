@@ -6,7 +6,8 @@ using UnityEngine;
 enum ItemTypes {
     health,
     life,
-    money
+    money,
+    end
 }
 
 public class Item : MonoBehaviour {
@@ -45,6 +46,9 @@ public class Item : MonoBehaviour {
                 GameManager.instance.addMoney(5);
                 AudioManager.instance.Play(itemCollectedSound);
                 Destroy(gameObject);
+            }
+            else if(type == ItemTypes.end) {
+                LevelSelector.EndLevel(GameManager.currentLevel);
             }
 
         }

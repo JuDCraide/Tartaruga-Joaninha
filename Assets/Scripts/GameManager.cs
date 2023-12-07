@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
+    public static int currentLevel = 1;
 
     public GameObject playerRef { get; private set; }
     public TMPro.TextMeshProUGUI moneyText;
@@ -43,4 +44,5 @@ public class GameManager : MonoBehaviour {
     public void unselectHat() {
         Hats.unselectHat();
     }
+
 }
