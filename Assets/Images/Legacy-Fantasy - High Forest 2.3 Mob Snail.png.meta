@@ -1,0 +1,965 @@
+fileFormatVersion: 2
+guid: a486fe380a4d3f64488805b73ae6fc28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2883373602233094897
+    second: MobSnail_0
+  - first:
+      213: -7584534126283268581
+    second: MobSnail_1
+  - first:
+      213: 6697218433569319246
+    second: MobSnail_2
+  - first:
+      213: -7652230736097159270
+    second: MobSnail_3
+  - first:
+      213: -8136742737814381191
+    second: MobSnail_4
+  - first:
+      213: 3387263271111712770
+    second: MobSnail_5
+  - first:
+      213: 4791021979296423515
+    second: MobSnail_6
+  - first:
+      213: 5923847500522899288
+    second: MobSnail_7
+  - first:
+      213: 8842496807536106836
+    second: MobSnail_8
+  - first:
+      213: 4588042441065342211
+    second: MobSnail_9
+  - first:
+      213: -7594637718315057661
+    second: MobSnail_10
+  - first:
+      213: -281386572127894303
+    second: MobSnail_11
+  - first:
+      213: -780567623581640722
+    second: MobSnail_12
+  - first:
+      213: 9169998971248215862
+    second: MobSnail_13
+  - first:
+      213: -8569614827156685752
+    second: MobSnail_14
+  - first:
+      213: -1981795772654049551
+    second: MobSnail_15
+  - first:
+      213: -2593268955158094321
+    second: MobSnail_16
+  - first:
+      213: 1249362330181725972
+    second: MobSnail_17
+  - first:
+      213: 9164420776567580784
+    second: MobSnail_18
+  - first:
+      213: -56341678650797396
+    second: MobSnail_19
+  - first:
+      213: 6351616610811167326
+    second: MobSnail_20
+  - first:
+      213: 4787694327129752228
+    second: MobSnail_21
+  - first:
+      213: 2664042311401064196
+    second: MobSnail_22
+  - first:
+      213: 4792690907329538656
+    second: MobSnail_23
+  - first:
+      213: 900917974329502635
+    second: MobSnail_24
+  - first:
+      213: 3135431702161454994
+    second: MobSnail_25
+  - first:
+      213: -8726215738725168222
+    second: MobSnail_26
+  - first:
+      213: 7939360663403745700
+    second: MobSnail_27
+  - first:
+      213: -4372160930024760647
+    second: MobSnail_28
+  - first:
+      213: -4348727502981758781
+    second: MobSnail_29
+  - first:
+      213: -1743437426957105348
+    second: MobSnail_30
+  - first:
+      213: -9006108924101946357
+    second: MobSnail_31
+  - first:
+      213: 7299890081771785280
+    second: MobSnail_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MobSnail_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 127
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d682c4cf23cf7d0800000000000000
+      internalID: -2883373602233094897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 95
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ede0095625eb690800000000000000
+      internalID: -7584534126283268581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 127
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49e8149eac41fc50800000000000000
+      internalID: 6697218433569319246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 127
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a975a9350b0ddc590800000000000000
+      internalID: -7652230736097159270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 127
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d95db179b741f80800000000000000
+      internalID: -8136742737814381191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 127
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2006753aff9f10f20800000000000000
+      internalID: 3387263271111712770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 127
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e5d033b112d7240800000000000000
+      internalID: 4791021979296423515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 127
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857c0447aebb53250800000000000000
+      internalID: 5923847500522899288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_8
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 127
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d17b43ffbd6ba70800000000000000
+      internalID: 8842496807536106836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 95
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305ad1aaa400caf30800000000000000
+      internalID: 4588042441065342211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e3c0abb3d6a9690800000000000000
+      internalID: -7594637718315057661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e480cb4760581cf0800000000000000
+      internalID: -281386572127894303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_12
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 95
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7de39c1edda25f0800000000000000
+      internalID: -780567623581640722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_13
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 95
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63782f7ca71624f70800000000000000
+      internalID: 9169998971248215862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 95
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cb76de7bc921980800000000000000
+      internalID: -8569614827156685752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 95
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6a599ae3f3f74e0800000000000000
+      internalID: -1981795772654049551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 63
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ed0c000abd20cd0800000000000000
+      internalID: -2593268955158094321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 63
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f6c3e7b60a65110800000000000000
+      internalID: 1249362330181725972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_18
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 63
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078258f14209e2f70800000000000000
+      internalID: 9164420776567580784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 63
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca258f1ba85d73ff0800000000000000
+      internalID: -56341678650797396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 63
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52cedcb7a9752850800000000000000
+      internalID: 6351616610811167326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_21
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 63
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2c8bdcf9e417240800000000000000
+      internalID: 4787694327129752228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_22
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 63
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407cba51e5498f420800000000000000
+      internalID: 2664042311401064196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_23
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 63
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a2f99ccfe038240800000000000000
+      internalID: 4792690907329538656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 31
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babaca7df14b08c00800000000000000
+      internalID: 900917974329502635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297f4d8558a438b20800000000000000
+      internalID: 3135431702161454994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab0dd3e40146e680800000000000000
+      internalID: -8726215738725168222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_27
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1d3e575764e2e60800000000000000
+      internalID: 7939360663403745700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_28
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba58018cc6f253c0800000000000000
+      internalID: -4372160930024760647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_29
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c00dc7606736a3c0800000000000000
+      internalID: -4348727502981758781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_30
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37c916b5e01ec7e0800000000000000
+      internalID: -1743437426957105348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b049d6266afd30380800000000000000
+      internalID: -9006108924101946357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MobSnail_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c87675a5b6e4560800000000000000
+      internalID: 7299890081771785280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f49cf31e9c5c07741bf50dc96a906da5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MobSnail_0: -2883373602233094897
+      MobSnail_1: -7584534126283268581
+      MobSnail_10: -7594637718315057661
+      MobSnail_11: -281386572127894303
+      MobSnail_12: -780567623581640722
+      MobSnail_13: 9169998971248215862
+      MobSnail_14: -8569614827156685752
+      MobSnail_15: -1981795772654049551
+      MobSnail_16: -2593268955158094321
+      MobSnail_17: 1249362330181725972
+      MobSnail_18: 9164420776567580784
+      MobSnail_19: -56341678650797396
+      MobSnail_2: 6697218433569319246
+      MobSnail_20: 6351616610811167326
+      MobSnail_21: 4787694327129752228
+      MobSnail_22: 2664042311401064196
+      MobSnail_23: 4792690907329538656
+      MobSnail_24: 900917974329502635
+      MobSnail_25: 3135431702161454994
+      MobSnail_26: -8726215738725168222
+      MobSnail_27: 7939360663403745700
+      MobSnail_28: -4372160930024760647
+      MobSnail_29: -4348727502981758781
+      MobSnail_3: -7652230736097159270
+      MobSnail_30: -1743437426957105348
+      MobSnail_31: -9006108924101946357
+      MobSnail_32: 7299890081771785280
+      MobSnail_4: -8136742737814381191
+      MobSnail_5: 3387263271111712770
+      MobSnail_6: 4791021979296423515
+      MobSnail_7: 5923847500522899288
+      MobSnail_8: 8842496807536106836
+      MobSnail_9: 4588042441065342211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Hat : MonoBehaviour {
     [SerializeField] public int id;
-    [SerializeField] private Sprite sprite;
+    [SerializeField] public Sprite sprite;
     [SerializeField] private int price;
 
     public bool bought = false;
-    private bool selected = false;
+    public bool selected = false;
 
     [SerializeField] private TMPro.TextMeshProUGUI hatText;
     [SerializeField] private Image hatImage;

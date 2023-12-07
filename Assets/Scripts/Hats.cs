@@ -7,12 +7,12 @@ public static class Hats {
     [SerializeField] public static Hat selectedHat = null;
 
     public static Hat GetHat(int id) {
-        if (hats[id] == null) {
-            Debug.Log("null");
-        }
-        else {
-            Debug.Log(hats[id].id.ToString());
-        }
+        //if (hats[id] == null) {
+        //    Debug.Log("null");
+        //}
+        //else {
+        //    Debug.Log(hats[id].selected.ToString());
+        //}
         return hats[id];
     }
 
