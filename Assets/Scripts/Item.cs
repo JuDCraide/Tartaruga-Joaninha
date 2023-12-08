@@ -43,7 +43,7 @@ public class Item : MonoBehaviour {
                 }
             }
             else if (type == ItemTypes.money) {
-                GameManager.instance.addMoney(1);
+                GameManager.instance.addMoney(5);
                 AudioManager.instance.Play(itemCollectedSound);
                 Destroy(gameObject);
             }
