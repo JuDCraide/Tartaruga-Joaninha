@@ -15,9 +15,11 @@ public class Hat {
     public bool selected = false;
 
     public void BuyHat() {
-        bought = true;
-        Money.spendMoney(price);
-        Hats.SetHat(id, this);
+        if (Money.getMoney() >= price) {
+            bought = true;
+            Money.spendMoney(price);
+            Hats.SetHat(id, this);
+        }
     }
 
     public void SelectHat() {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class Money {
-    private static int money;
+    private static int money = 0;
 
     public static void addMoney(int value) {
         money += value;

@@ -24,6 +24,9 @@ public class HatSelect : MonoBehaviour {
 
     public void Update() {
         hatText.text = hat.SetText();
+        if (Money.getMoney() < hat.price) {
+            gameObject.GetComponent<Button>().interactable = false;
+        }
     }
 
     public void OnClick() {
