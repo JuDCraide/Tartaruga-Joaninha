@@ -33,7 +33,8 @@ public class PlayerHealth : MonoBehaviour {
         if (currentHealth <= 0) {
             spriteRenderer.color = new Color(1, 0, 0, 1);
             AudioManager.instance.Play(playerDie);
-            //LevelSelector.ReturnToSelectLevel();
+            LevelSelector.ReturnToSelectLevel();
+            GameManager.removeLevelMoney();
         }
         else {
             AudioManager.instance.Play(playerHurt);

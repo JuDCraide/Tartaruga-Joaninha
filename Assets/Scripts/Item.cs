@@ -48,7 +48,7 @@ public class Item : MonoBehaviour {
                 Destroy(gameObject);
             }
             else if(type == ItemTypes.end) {
-                LevelSelector.EndLevel(GameManager.currentLevel);
+                GameManager.EndLevel(GameManager.currentLevel);
             }
 
         }

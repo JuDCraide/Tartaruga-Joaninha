@@ -6,9 +6,10 @@ using UnityEngine.UIElements;
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
     public static int currentLevel = 1;
+    private static int levelMoney = 0;
 
     public GameObject playerRef { get; private set; }
-    public TMPro.TextMeshProUGUI moneyText;
+    public TMPro.TextMeshProUGUI moneyText = null;
 
     private void Awake() {
         if (instance != null && instance != this) {
@@ -24,7 +25,9 @@ public class GameManager : MonoBehaviour {
     }
 
     void Update() {
-
+        if (moneyText != null) {
+            showMoney();
+        }
     }
 
     public void setPlayer(GameObject newPlayer) {
@@ -36,9 +39,22 @@ public class GameManager : MonoBehaviour {
     }
 
     public void addMoney(int value) {
-        Money.addMoney(value);
-        int money = Money.getMoney();
-        moneyText.text = money.ToString("D7");
+        levelMoney += value;
+    }
+
+    public static void removeLevelMoney() {
+        levelMoney = 0;
+    }
+
+    public void showMoney() {
+        moneyText.text = (levelMoney + Money.getMoney()).ToString();
+    }
+
+    public static void EndLevel(int currentLevel) {
+        Money.addMoney(levelMoney);
+        LevelSelector.UnlockNextLevel(currentLevel);
+        LevelSelector.ReturnToSelectLevel();
+        levelMoney = 0;
     }
 
     public void unselectHat() {

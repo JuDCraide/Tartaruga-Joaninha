@@ -7,6 +7,7 @@ public class HatSelect : MonoBehaviour {
     [SerializeField] public Hat hat;
 
     [SerializeField] private TMPro.TextMeshProUGUI hatText;
+    [SerializeField] private GameObject coinImage;
     [SerializeField] private Image hatImage;
 
     public void Start() {
@@ -26,6 +27,9 @@ public class HatSelect : MonoBehaviour {
         hatText.text = hat.SetText();
         if (Money.getMoney() < hat.price) {
             gameObject.GetComponent<Button>().interactable = false;
+        }
+        if (hat.bought) {
+            coinImage.SetActive(false);
         }
     }
 

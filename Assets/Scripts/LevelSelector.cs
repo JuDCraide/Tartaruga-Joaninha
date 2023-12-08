@@ -19,7 +19,6 @@ public class LevelSelector : MonoBehaviour {
         if (!historyLevel) {
             levelName.text = "Nível \n" + level.ToString();
         }
-
     }
 
     public void LoadLevel(string sceneName) {
@@ -37,10 +36,5 @@ public class LevelSelector : MonoBehaviour {
     }
     public static void ReturnToSelectLevel() {
         SceneManager.LoadScene("SelectLevel");
-    }
-
-    public static void EndLevel(int currentLevel) {
-        UnlockNextLevel(currentLevel);
-        ReturnToSelectLevel();
     }
 }
