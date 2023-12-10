@@ -163,13 +163,13 @@ public class PlayerMovement : MonoBehaviour {
         swimDirectionVertical = swimV.ReadValue<float>();
         moveDirection = move.ReadValue<float>();
         if (onWater && !grounded) {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             transform.rotation = Quaternion.identity;
             playerAnimator.SetBool("isSwiming", true);
             playerAnimator.SetBool("isJumping", false);
         }
         else {
-            rb.constraints = RigidbodyConstraints2D.None;
+            //rb.constraints = RigidbodyConstraints2D.None;
             playerAnimator.SetBool("isSwiming", false);
             playerAnimator.SetBool("isWalking", moveDirection != 0);
         }
@@ -180,7 +180,7 @@ public class PlayerMovement : MonoBehaviour {
                 jumpCounter -= Time.deltaTime;
                 jumpCounter2 += Time.deltaTime;
                 transform.rotation = Quaternion.identity;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
             else if (jumpCounter > 0) {
                 playerAnimator.SetBool("isJumping", true);
@@ -188,7 +188,7 @@ public class PlayerMovement : MonoBehaviour {
                 jumpCounter -= Time.deltaTime;
                 jumpCounter2 += Time.deltaTime;
                 transform.rotation = Quaternion.identity;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
             else {
                 isJumping = false;
