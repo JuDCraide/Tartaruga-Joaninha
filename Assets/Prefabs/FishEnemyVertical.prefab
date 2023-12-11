@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1784650132322138315}
   - component: {fileID: 4306334810516740520}
   - component: {fileID: 148378584458979683}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: FishEnemyVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 12288
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
