@@ -18,7 +18,9 @@ public class Item : MonoBehaviour {
     [SerializeField] private Sound itemCollectedSound;
 
     void Start() {
-
+        if (type == ItemTypes.life && GameManager.lifeCollected()) {
+            Destroy(gameObject);
+        }
     }
 
     void Update() {
@@ -39,6 +41,7 @@ public class Item : MonoBehaviour {
                 if (!healthBar.hasUnlockedAllCointainer()) {
                     healthBar.unlockContainer();
                     AudioManager.instance.Play(itemCollectedSound);
+                    GameManager.collectLife();
                     Destroy(gameObject);
                 }
             }
@@ -47,7 +50,7 @@ public class Item : MonoBehaviour {
                 AudioManager.instance.Play(itemCollectedSound);
                 Destroy(gameObject);
             }
-            else if(type == ItemTypes.end) {
+            else if (type == ItemTypes.end) {
                 GameManager.EndLevel(GameManager.currentLevel);
             }
 

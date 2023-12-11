@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject playerRef { get; private set; }
     public TMPro.TextMeshProUGUI moneyText = null;
+    public static List<int> livesCollected = new List<int> { };
 
     private void Awake() {
         if (instance != null && instance != this) {
@@ -59,6 +61,17 @@ public class GameManager : MonoBehaviour {
 
     public void unselectHat() {
         Hats.unselectHat();
+    }
+
+    public static void collectLife() {        
+        livesCollected.Add(currentLevel);
+    }
+
+    public static bool lifeCollected() {
+        if (livesCollected.Contains(currentLevel)){
+            return true;
+        }
+        return false;
     }
 
 }
