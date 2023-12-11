@@ -47,7 +47,7 @@ MonoBehaviour:
   bgMusic:
     clip: {fileID: 8300000, guid: f02e5ca7b8f2d934ca6add521deac4ee, type: 3}
     loop: 1
-    volume: 0.2
-    pitch: 1
+    volume: 1
+    pitch: 1.2
     source: {fileID: 0}
     mute: 0

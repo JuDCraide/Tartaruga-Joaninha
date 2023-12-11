@@ -1956,14 +1956,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioSource
       objectReference: {fileID: 0}
-    - target: {fileID: 8220334000535383024, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
-      propertyPath: bgMusic.mute
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220334000535383024, guid: ea8c924a40d52c848a1f49edb1843779, type: 3}
-      propertyPath: bgMusic.pitch
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
