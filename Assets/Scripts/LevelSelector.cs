@@ -37,4 +37,8 @@ public class LevelSelector : MonoBehaviour {
     public static void ReturnToSelectLevel() {
         SceneManager.LoadScene("SelectLevel");
     }
+
+    public static void unselectHat() {
+        GameManager.unselectHat();
+    }
 }

@@ -26,7 +26,7 @@ public static class Hats {
     public static void unselectHat() {
         if (Hats.selectedHat != null) {
             Hats.selectedHat.UnselectHat();
+            Hats.selectedHat = null;
         }
-        Hats.selectedHat = null;
     }
 }

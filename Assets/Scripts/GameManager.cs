@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour {
         levelMoney = 0;
     }
 
-    public void unselectHat() {
+    public static void unselectHat() {
         Hats.unselectHat();
     }
 

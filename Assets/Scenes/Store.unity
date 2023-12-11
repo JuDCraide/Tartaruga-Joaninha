@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 10279206}
   - component: {fileID: 10279207}
+  - component: {fileID: 10279208}
   m_Layer: 5
   m_Name: LevelsGrid
   m_TagString: Untagged
@@ -189,6 +190,21 @@ MonoBehaviour:
   m_Spacing: {x: 18, y: 16}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &10279208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10279205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0381365c070265a49b04ff0c4a3f1042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: -5
+  historyLevel: 1
+  levelName: {fileID: 0}
 --- !u!1 &113771776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,8 +1266,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 644509958}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 10279208}
+        m_TargetAssemblyTypeName: LevelSelector, Assembly-CSharp
         m_MethodName: unselectHat
         m_Mode: 1
         m_Arguments:
@@ -1259,9 +1275,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &488442221
 MonoBehaviour:
   m_ObjectHideFlags: 0
