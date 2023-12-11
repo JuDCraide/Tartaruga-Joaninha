@@ -35660,7 +35660,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2509804}
   m_Origin: {x: -34, y: -23, z: 0}
   m_Size: {x: 184, y: 50, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -35812,7 +35812,7 @@ GameObject:
   - component: {fileID: 484070439824471402}
   - component: {fileID: 797216087444244300}
   - component: {fileID: 9062429535751104274}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
