@@ -25,6 +25,7 @@ public class SnailEnemy : MonoBehaviour {
     [SerializeField] private Transform topPosition;
     [SerializeField] private float IFramesDuration;
     [SerializeField] private Sound hideSound;
+    private bool enableHideSound = true;
     private DamagePlayer dp;
     private float lastMoveDirection = -1f;
 
@@ -37,12 +38,15 @@ public class SnailEnemy : MonoBehaviour {
 
     private void TopColision() {
         if (Physics2D.OverlapCircle(topPosition.position, hideDetectRadius, playerLayer)) {
-            if(moveDirection != 0) {
+            if (moveDirection != 0) {
                 lastMoveDirection = moveDirection;
             }
             moveDirection = 0;
             dp.enabled = false;
-            AudioManager.instance.Play(hideSound);
+            if (enableHideSound) {
+                AudioManager.instance.Play(hideSound);
+                enableHideSound = false;
+            }
             StartCoroutine(Hide());
         }
     }
@@ -53,13 +57,14 @@ public class SnailEnemy : MonoBehaviour {
         yield return new WaitForSeconds(IFramesDuration);
 
         enemyAnimator.SetBool("isAppear", true);
-        yield return new WaitForSeconds(IFramesDuration/2);
+        yield return new WaitForSeconds(IFramesDuration / 2);
 
         enemyAnimator.SetBool("isHide", false);
         enemyAnimator.SetBool("isAppear", false);
 
         moveDirection = lastMoveDirection;
         dp.enabled = true;
+        enableHideSound = true;
     }
 
     void Flip() {
