@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a18d2eac7dd1f0c439c4af905b772141
+guid: 7548c3e32264cce44bd7063315b7c103
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3913733165383138060
-    second: A correntesa fez Goma bater em uma pedra quebrando seu casco bem ao meio_0
+      213: 6937817954938267909
+    second: 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: A correntesa fez Goma bater em uma pedra quebrando seu casco bem ao meio_0
+      name: 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0bb35cf39f505630800000000000000
-      internalID: 3913733165383138060
+      spriteID: 5092c600ca4184060800000000000000
+      internalID: 6937817954938267909
       vertices: []
       indices: 
       edges: []
