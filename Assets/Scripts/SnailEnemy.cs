@@ -24,26 +24,31 @@ public class SnailEnemy : MonoBehaviour {
     [SerializeField] float hideDetectRadius = 0.2f;
     [SerializeField] private Transform topPosition;
     [SerializeField] private float IFramesDuration;
+    [SerializeField] private Sound hideSound;
     private DamagePlayer dp;
-    private float lastMoveDirection = -1;
+    private float lastMoveDirection = -1f;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         enemyAnimator = GetComponent<Animator>();
         dp = GetComponent<DamagePlayer>();
+        lastMoveDirection = moveDirection;
     }
 
     private void TopColision() {
         if (Physics2D.OverlapCircle(topPosition.position, hideDetectRadius, playerLayer)) {
+            if(moveDirection != 0) {
+                lastMoveDirection = moveDirection;
+            }
+            moveDirection = 0;
+            dp.enabled = false;
+            AudioManager.instance.Play(hideSound);
             StartCoroutine(Hide());
         }
     }
 
-    private IEnumerator Hide() {
-        lastMoveDirection = moveDirection;
-        moveDirection = 0;
-        dp.enabled = false;
 
+    private IEnumerator Hide() {
         enemyAnimator.SetBool("isHide", true);
         yield return new WaitForSeconds(IFramesDuration);
 
@@ -52,6 +57,7 @@ public class SnailEnemy : MonoBehaviour {
 
         enemyAnimator.SetBool("isHide", false);
         enemyAnimator.SetBool("isAppear", false);
+
         moveDirection = lastMoveDirection;
         dp.enabled = true;
     }

@@ -371,6 +371,13 @@ MonoBehaviour:
   hideDetectRadius: 0.2
   topPosition: {fileID: 5597619119856953292}
   IFramesDuration: 3
+  hideSound:
+    clip: {fileID: 8300000, guid: dc6614beca09347ec9b258f12d154bdd, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1.5
+    source: {fileID: 0}
+    mute: 0
 --- !u!61 &1571430466171558166
 BoxCollider2D:
   m_ObjectHideFlags: 0
