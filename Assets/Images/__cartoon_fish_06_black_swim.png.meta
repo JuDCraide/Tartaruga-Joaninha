@@ -420,7 +420,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __cartoon_fish_06_black_swim_0: 6833394738507863997
+      __cartoon_fish_06_black_swim_1: 4725302089551094906
+      __cartoon_fish_06_black_swim_10: -2951951745747220645
+      __cartoon_fish_06_black_swim_11: 5938274507448436491
+      __cartoon_fish_06_black_swim_2: 4169495900028010589
+      __cartoon_fish_06_black_swim_3: 7947925478979167976
+      __cartoon_fish_06_black_swim_4: -2428084455184409745
+      __cartoon_fish_06_black_swim_5: 828370874833041244
+      __cartoon_fish_06_black_swim_6: -7722543634019415533
+      __cartoon_fish_06_black_swim_7: 7574910332313125090
+      __cartoon_fish_06_black_swim_8: -7147956761686659451
+      __cartoon_fish_06_black_swim_9: -176368386341664212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

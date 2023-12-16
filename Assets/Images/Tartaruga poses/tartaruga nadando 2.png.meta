@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tartaruga nadando 2_0: 6902070547245230500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
