@@ -142,15 +142,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
             ""id"": ""f1682f7c-9a08-483e-aa94-272712c074ba"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""e524ee60-0f3c-4821-a48f-25bd32f20e83"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""WaterMovementHorizontal"",
                     ""type"": ""Value"",
                     ""id"": ""f3dac87f-68d7-4f60-ae32-bb1d31480742"",
@@ -170,17 +161,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""d3672dc5-532c-4fe5-87e7-74a973ca9d1e"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": ""Horizontal"",
                     ""id"": ""a6c554a8-4ee0-4a8e-a09a-2e8f0429bc1b"",
@@ -324,7 +304,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         // PlayerWater
         m_PlayerWater = asset.FindActionMap("PlayerWater", throwIfNotFound: true);
-        m_PlayerWater_Newaction = m_PlayerWater.FindAction("New action", throwIfNotFound: true);
         m_PlayerWater_WaterMovementHorizontal = m_PlayerWater.FindAction("WaterMovementHorizontal", throwIfNotFound: true);
         m_PlayerWater_WaterMovementVertical = m_PlayerWater.FindAction("WaterMovementVertical", throwIfNotFound: true);
     }
@@ -442,14 +421,12 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
     // PlayerWater
     private readonly InputActionMap m_PlayerWater;
     private List<IPlayerWaterActions> m_PlayerWaterActionsCallbackInterfaces = new List<IPlayerWaterActions>();
-    private readonly InputAction m_PlayerWater_Newaction;
     private readonly InputAction m_PlayerWater_WaterMovementHorizontal;
     private readonly InputAction m_PlayerWater_WaterMovementVertical;
     public struct PlayerWaterActions
     {
         private @GameInputActions m_Wrapper;
         public PlayerWaterActions(@GameInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_PlayerWater_Newaction;
         public InputAction @WaterMovementHorizontal => m_Wrapper.m_PlayerWater_WaterMovementHorizontal;
         public InputAction @WaterMovementVertical => m_Wrapper.m_PlayerWater_WaterMovementVertical;
         public InputActionMap Get() { return m_Wrapper.m_PlayerWater; }
@@ -461,9 +438,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerWaterActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
             @WaterMovementHorizontal.started += instance.OnWaterMovementHorizontal;
             @WaterMovementHorizontal.performed += instance.OnWaterMovementHorizontal;
             @WaterMovementHorizontal.canceled += instance.OnWaterMovementHorizontal;
@@ -474,9 +448,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
 
         private void UnregisterCallbacks(IPlayerWaterActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
             @WaterMovementHorizontal.started -= instance.OnWaterMovementHorizontal;
             @WaterMovementHorizontal.performed -= instance.OnWaterMovementHorizontal;
             @WaterMovementHorizontal.canceled -= instance.OnWaterMovementHorizontal;
@@ -507,7 +478,6 @@ public partial class @GameInputActions: IInputActionCollection2, IDisposable
     }
     public interface IPlayerWaterActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
         void OnWaterMovementHorizontal(InputAction.CallbackContext context);
         void OnWaterMovementVertical(InputAction.CallbackContext context);
     }

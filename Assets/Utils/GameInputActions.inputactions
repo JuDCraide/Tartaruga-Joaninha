@@ -120,15 +120,6 @@
             "id": "f1682f7c-9a08-483e-aa94-272712c074ba",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "e524ee60-0f3c-4821-a48f-25bd32f20e83",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "WaterMovementHorizontal",
                     "type": "Value",
                     "id": "f3dac87f-68d7-4f60-ae32-bb1d31480742",
@@ -148,17 +139,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "d3672dc5-532c-4fe5-87e7-74a973ca9d1e",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "Horizontal",
                     "id": "a6c554a8-4ee0-4a8e-a09a-2e8f0429bc1b",
