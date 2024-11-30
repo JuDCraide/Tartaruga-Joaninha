@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour {
 
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private Animator playerAnimator;
 
     [Header("Ground Movement")]
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour {
     private Vector3 hatInitialPosition;
     private Quaternion hatInitialRotation;
     [SerializeField] private GameObject hatObject;
+    private SpriteRenderer hatObjectSr;
 
     private GameInputActions playerControls;
     private InputAction move;
@@ -51,13 +53,15 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         playerControls = new GameInputActions();
+        
+        hatObjectSr = hatObject.GetComponent<SpriteRenderer>();
         SetHatSprite();
     }
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-
+        sr = GetComponent<SpriteRenderer>();
         GameManager.instance.setPlayer(gameObject);
 
         hatInitialPosition = hatObject.transform.localPosition;
@@ -127,7 +131,7 @@ public class PlayerMovement : MonoBehaviour {
         if ((turnedRight && moveDirection < 0f) || (!turnedRight && moveDirection > 0f) ||
             (turnedRight && swimDirectionHorizontal < 0f) || (!turnedRight && swimDirectionHorizontal > 0f)) {
             turnedRight = !turnedRight;
-            GetComponent<SpriteRenderer>().flipX = !turnedRight;
+            sr.flipX = !turnedRight;
             FlipPlayerHat();
         }
     }
@@ -139,7 +143,7 @@ public class PlayerMovement : MonoBehaviour {
             hatPos = new Vector3(-hatInitialPosition.x, hatInitialPosition.y, hatInitialPosition.z);
             hatRot = Quaternion.Euler(hatRot.x, hatRot.y, hatRot.z);
         }
-        hatObject.GetComponent<SpriteRenderer>().flipX = !turnedRight;
+        hatObjectSr.flipX = !turnedRight;
         hatObject.transform.localPosition = hatPos;
         hatObject.transform.rotation = hatRot;
     }
@@ -149,7 +153,7 @@ public class PlayerMovement : MonoBehaviour {
             hatObject.SetActive(false);
         }
         else {
-            hatObject.GetComponent<SpriteRenderer>().sprite = Hats.selectedHat.sprite; 
+            hatObjectSr.sprite = Hats.selectedHat.sprite; 
             hatObject.SetActive(true);
         }
     }

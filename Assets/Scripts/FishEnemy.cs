@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class FishEnemy : MonoBehaviour {
 
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private Animator enemyAnimator;
 
     [Header("Ground Movement")]
@@ -24,9 +25,10 @@ public class FishEnemy : MonoBehaviour {
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         enemyAnimator = GetComponent<Animator>();
         if (verticalMovement) {
-            GetComponent<SpriteRenderer>().flipX = false;
+            sr.flipX = false;
         }
     }
 
@@ -37,7 +39,7 @@ public class FishEnemy : MonoBehaviour {
         if ((turnedRight && rightCollided) || (!turnedRight && leftCollided)) {
             moveDirection *= -1;
             turnedRight = !turnedRight;
-            GetComponent<SpriteRenderer>().flipX = turnedRight;
+            sr.flipX = turnedRight;
         }
     }
 

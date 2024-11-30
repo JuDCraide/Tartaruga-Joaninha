@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class SnailEnemy : MonoBehaviour {
 
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     private Animator enemyAnimator;
 
     [Header("Ground Movement")]
@@ -31,12 +32,13 @@ public class SnailEnemy : MonoBehaviour {
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         enemyAnimator = GetComponent<Animator>();
         dp = GetComponent<DamagePlayer>();
         lastMoveDirection = moveDirection;
     }
 
-    private void TopColision() {
+    private void TopCollision() {
         if (Physics2D.OverlapCircle(topPosition.position, hideDetectRadius, playerLayer)) {
             if (moveDirection != 0) {
                 lastMoveDirection = moveDirection;
@@ -74,13 +76,13 @@ public class SnailEnemy : MonoBehaviour {
         if ((turnedRight && rightCollided) || (!turnedRight && leftCollided)) {
             moveDirection *= -1;
             turnedRight = !turnedRight;
-            GetComponent<SpriteRenderer>().flipX = turnedRight;
+            sr.flipX = turnedRight;
         }
     }
 
     void Update() {
         Flip();
-        TopColision();
+        TopCollision();
     }
 
 

@@ -10,6 +10,8 @@ public class HatSelect : MonoBehaviour {
     [SerializeField] private GameObject coinImage;
     [SerializeField] private Image hatImage;
 
+    private Button button;
+
     public void Start() {
         hatImage.GetComponent<Image>().sprite = hat.sprite;
         Hat savedHat = Hats.GetHat(hat.id);
@@ -21,12 +23,14 @@ public class HatSelect : MonoBehaviour {
             hat.selected = savedHat.selected;
         }
         hatText.text = hat.SetText();
+
+        button = gameObject.GetComponent<Button>();
     }
 
     public void Update() {
         hatText.text = hat.SetText();
         if (!hat.bought && Money.getMoney() < hat.price) {
-            gameObject.GetComponent<Button>().interactable = false;
+            button.interactable = false;
         }
         if (hat.bought) {
             coinImage.SetActive(false);
