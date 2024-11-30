@@ -5,7 +5,7 @@ using UnityEngine;
 
 [Serializable]
 public static class Hats {
-    [SerializeField] public static List<Hat> hats = new List<Hat> { null, null, null, null, null, null, null, null, null, null };
+    [SerializeField] public static Hat[] hats = new Hat[] { null, null, null, null, null, null, null, null, null, null };
     [SerializeField] public static Hat selectedHat { get; private set; } = null;
     
     public static Hat GetHat(int id) {

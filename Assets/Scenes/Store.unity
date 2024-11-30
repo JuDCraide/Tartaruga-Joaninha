@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 10279207}
   - component: {fileID: 10279208}
   m_Layer: 5
-  m_Name: LevelsGrid
+  m_Name: HatsGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
