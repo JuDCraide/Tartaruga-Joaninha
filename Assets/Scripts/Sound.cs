@@ -14,31 +14,29 @@ public class Sound {
     [Range(-3f, 3f)]
     public float pitch = 1f;
 
-    [HideInInspector]
-    public AudioSource source;
+    //[HideInInspector]
+    //public AudioSource source;
     public bool mute;
 
-    private bool initialized = false;
-
-    public void InitializeSound() {
-        source = AudioManager.instance.gameObject.AddComponent<AudioSource>();
+    public void InitializeSound(AudioSource source) {
+        //source = AudioManager.instance.gameObject.AddComponent<AudioSource>();
         source.clip = clip;
         source.volume = volume;
         source.pitch = pitch;
         source.loop = loop;
         source.mute = mute;
-        initialized = true;
     }
 
-    public bool WasInitialized() {
-        return initialized;
-    }
+    //public bool WasInitialized() {
+    //    return initialized;
+    //}
 
-    public void ChangelogPitch(float pitch) {
-        if(pitch > 3f || pitch< -3f) {
-            return;
-        }
-        this.pitch = pitch;
-        source.pitch = pitch;
-    }
+    //public void ChangelogPitch(float pitch) {
+    //    if(pitch > 3f || pitch< -3f) {
+    //        return;
+    //    }
+    //    this.pitch = pitch;
+    //    source.pitch = pitch;
+    //}
+
 }
