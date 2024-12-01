@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject playerRef { get; private set; }
     public TMPro.TextMeshProUGUI moneyText = null;
-    public static List<int> livesCollected = new List<int> { };
+    public static HashSet<int> livesCollected = new HashSet<int>();
 
     private void Awake() {
         if (instance != null && instance != this) {
@@ -63,12 +63,12 @@ public class GameManager : MonoBehaviour {
         Hats.unselectHat();
     }
 
-    public static void collectLife() {        
+    public static void collectLife() {
         livesCollected.Add(currentLevel);
     }
 
     public static bool lifeCollected() {
-        if (livesCollected.Contains(currentLevel)){
+        if (livesCollected.Contains(currentLevel)) {
             return true;
         }
         return false;
